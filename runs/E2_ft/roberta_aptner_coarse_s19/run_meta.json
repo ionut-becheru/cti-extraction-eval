@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-07T21:10:08Z","end_utc":"2026-09-07T21:11:30Z","wall_seconds":82,"exit_code":0,
+ "peak_gpu_mem_mib":4870,"mean_gpu_util_pct":41.2,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/finetune_ner.py --model FacebookAI/roberta-base --dataset aptner --schema coarse --seed 19 --out runs/E2_ft/roberta_aptner_coarse_s19 --eval-on aptner,dnrti,cyner,annoctr,attacker --epochs 5"}

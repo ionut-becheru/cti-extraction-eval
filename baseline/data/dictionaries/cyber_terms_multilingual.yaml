@@ -1,0 +1,388 @@
+# Multilingual cyber-relevance lexicon used by the pre-translation filter.
+#
+# Layout: per-language ISO-639-1 keys, lists of native cybersecurity terms.
+# Each term is matched as a case-insensitive whole word against the original
+# (un-translated) cleaned text, after stripping diacritics for languages
+# where readers commonly drop them.
+#
+# Goal: catch enough native cyber vocabulary that a non-English forum post
+# discussing security (whose only signal is in its source language) passes
+# the pre-translation filter, while NOT triggering on Russian political
+# ranting, K-pop forums, Catalan navigation chrome, etc.
+#
+# Universal patterns (CVE/CWE/IP/hash/.onion/wallets) and English-loanword
+# cyber terms (malware, ransomware, exploit, RDP, ...) are handled
+# separately in code (UNIVERSAL_LOANWORDS in relevance_filter.py) and apply
+# regardless of detected language.
+
+# ---- Slavic ------------------------------------------------------------
+ru:  # Russian — tightened: dropped bare "пароль" (login chrome), "вирус"
+  # (medical/biology), "атака" (sports/military), "тор" (food), and similar
+  # too-generic terms. Kept only cyber-specific compound or domain words.
+  - уязвимость       # vulnerability — domain-specific
+  - уязвимост        # case stems
+  - кибератак        # cyberattack
+  - кибербезопас     # cybersecurity
+  - взломщик         # hacker (less common; politics doesn't use)
+  - взлома           # hacking (genitive)
+  - вредонос         # malware (root)
+  - вредоносное      # malicious
+  - эксплойт
+  - эксплойта
+  - фишинг
+  - бэкдор
+  - ботнет
+  - инфостилер
+  - стиллер
+  - стиллера
+  - криптокошел      # crypto wallet
+  - криптокошель
+  - даркнет
+  - дарквеб
+  - шифрование       # encryption
+  - дешифр           # decryption
+
+uk:  # Ukrainian
+  - вразливість
+  - атака
+  - хакер
+  - пароль
+  - шкідлив
+  - вірус
+  - експлойт
+
+bg:  # Bulgarian
+  - уязвимост
+  - атака
+  - хакер
+  - парола
+  - фишинг
+  - вирус
+  - троянски
+  - шифроване
+
+mk:  # Macedonian
+  - ранливост
+  - напад
+  - хакер
+  - вирус
+
+# ---- Germanic ----------------------------------------------------------
+de:  # German — dropped bare "Passwort" (login chrome), "Hacker" (commonly
+  # used in non-cyber contexts), "Angriff" (sports/war). Kept compound and
+  # domain-specific terms only.
+  - Sicherheitslücke
+  - Sicherheitsluecke
+  - Schwachstelle
+  - Schadsoftware
+  - Schadcode
+  - Verschlüsselung
+  - Verschluesselung
+  - Erpressersoftware
+  - Datenleck
+  - Datendiebstahl
+  - Datenpanne
+  - Cyberangriff
+  - Cybersicherheit
+  - Trojaner
+  - Phishing
+  - Identitätsdiebstahl
+  - Hintertür
+
+nl:  # Dutch
+  - kwetsbaarheid
+  - aanval
+  - hacker
+  - wachtwoord
+  - kwaadaardig
+  - virus
+  - phishing
+  - inbraak
+  - lekkage
+  - cyberaanval
+
+sv:  # Swedish
+  - sårbarhet
+  - sarbarhet
+  - attack
+  - dataintrång
+  - dataintrang
+  - hackare
+  - lösenord
+  - losenord
+  - skadlig
+
+no:  # Norwegian
+  - sårbarhet
+  - sarbarhet
+  - angrep
+  - hacker
+  - passord
+  - skadelig
+  - dataangrep
+
+da:  # Danish
+  - sårbarhed
+  - sarbarhed
+  - angreb
+  - hacker
+  - kodeord
+  - skadeligt
+
+# ---- Romance -----------------------------------------------------------
+fr:  # French
+  - vulnérabilité
+  - vulnerabilite
+  - faille
+  - rançongiciel
+  - rancongiciel
+  - hameçonnage
+  - hamecconnage
+  - piratage
+  - pirate informatique
+  - cheval de troie
+  - chiffrement
+  - mot de passe
+  - mots de passe
+  - rançon
+  - rancon
+  - fuite de données
+  - fuite de donnees
+  - cybersécurité
+  - cybersecurite
+  - logiciel malveillant
+  - porte dérobée
+  - porte derobee
+  - attaque informatique
+  - escroquerie
+
+es:  # Spanish
+  - vulnerabilidad
+  - ataque
+  - ciberataque
+  - ciberseguridad
+  - hackeo
+  - troyano
+  - cifrado
+  - contraseña
+  - contrasena
+  - puerta trasera
+  - secuestro de datos
+  - rescate
+  - fuga de datos
+  - software malicioso
+  - estafa informática
+  - estafa informatica
+
+it:  # Italian
+  - vulnerabilità
+  - vulnerabilita
+  - attacco
+  - sicurezza informatica
+  - hackeraggio
+  - cifratura
+  - decrittazione
+  - password
+  - troiano
+  - riscatto
+  - software malevolo
+  - violazione dei dati
+  - frode informatica
+  - botola
+  - phishing
+
+pt:  # Portuguese
+  - vulnerabilidade
+  - ataque
+  - hackeamento
+  - cibersegurança
+  - cibersegurance
+  - cifragem
+  - senha
+  - cavalo de troia
+  - resgate
+  - vazamento de dados
+  - software malicioso
+
+ro:  # Romanian
+  - vulnerabilitate
+  - atac
+  - hacker
+  - parolă
+  - criptare
+  - troian
+  - exploatare
+  - phishing
+
+ca:  # Catalan — dropped bare "contrasenya" (FB login chrome) and "atac"
+  # (sports). Kept only domain-specific terms.
+  - vulnerabilitat
+  - ciberseguretat
+  - troià
+  - xifrat
+
+# ---- Other Indo-European -----------------------------------------------
+pl:  # Polish
+  - podatność
+  - podatnosc
+  - atak
+  - haker
+  - hasło
+  - haslo
+  - złośliwe
+  - zlosliwe
+  - okup
+  - wyciek
+  - cyberbezpieczeństwo
+  - cyberbezpieczenstwo
+
+cs:  # Czech
+  - zranitelnost
+  - útok
+  - utok
+  - hacker
+  - heslo
+  - škodlivý
+  - skodlivy
+  - výkupné
+  - vykupne
+
+sk:  # Slovak
+  - zraniteľnosť
+  - zranitelnost
+  - útok
+  - hacker
+  - heslo
+  - škodlivý
+  - skodlivy
+
+el:  # Greek
+  - ευπάθεια
+  - επίθεση
+  - χάκερ
+  - κωδικός πρόσβασης
+  - ιός
+  - κρυπτογράφηση
+
+# ---- East Asian --------------------------------------------------------
+zh:  # Chinese (Simplified — Traditional terms below)
+  - 漏洞                # vulnerability
+  - 攻击                # attack
+  - 黑客                # hacker
+  - 病毒                # virus
+  - 木马                # trojan
+  - 钓鱼                # phishing
+  - 加密                # encryption
+  - 解密                # decryption
+  - 后门                # backdoor
+  - 网络安全            # cybersecurity
+  - 数据泄露            # data leak
+  - 勒索                # ransom
+  - 恶意软件            # malware
+  - 密码                # password
+  # Traditional variants commonly seen alongside
+  - 漏洞
+  - 攻擊
+  - 駭客
+  - 病毒
+  - 木馬
+  - 釣魚
+
+ja:  # Japanese
+  - 脆弱性
+  - 攻撃
+  - サイバー攻撃
+  - マルウェア
+  - トロイの木馬
+  - フィッシング
+  - パスワード
+  - 暗号化
+  - 復号
+  - 流出
+  - 漏洩
+  - 身代金
+  - 改ざん
+  - バックドア
+  - ハッカー
+
+ko:  # Korean
+  - 취약점
+  - 공격
+  - 해커
+  - 비밀번호
+  - 암호화
+  - 악성코드
+  - 멀웨어
+  - 트로이목마
+  - 피싱
+  - 백도어
+  - 데이터 유출
+  - 랜섬웨어
+
+# ---- Other -------------------------------------------------------------
+tr:  # Turkish
+  - güvenlik açığı
+  - guvenlik acigi
+  - saldırı
+  - saldiri
+  - hacker
+  - parola
+  - şifreleme
+  - sifreleme
+  - kötücül
+  - kotucul
+  - veri sızıntısı
+  - veri sizintisi
+
+ar:  # Arabic
+  - ثغرة          # vulnerability
+  - هجوم          # attack
+  - قرصنة          # hacking
+  - تشفير          # encryption
+  - فدية           # ransom
+  - برمجية خبيثة   # malicious software
+  - كلمة المرور    # password
+
+he:  # Hebrew
+  - פגיעות         # vulnerability
+  - מתקפה          # attack
+  - האקר           # hacker
+  - סיסמה           # password
+  - הצפנה           # encryption
+  - דליפה           # leak
+
+vi:  # Vietnamese
+  - lỗ hổng
+  - lo hong
+  - tấn công
+  - tan cong
+  - hacker
+  - mật khẩu
+  - mat khau
+  - mã hóa
+  - ma hoa
+  - rò rỉ dữ liệu
+
+th:  # Thai
+  - ช่องโหว่
+  - การโจมตี
+  - แฮกเกอร์
+  - รหัสผ่าน
+  - การเข้ารหัส
+  - การรั่วไหล
+
+id:  # Indonesian
+  - kerentanan
+  - serangan
+  - peretas
+  - kata sandi
+  - enkripsi
+  - kebocoran data
+
+hi:  # Hindi
+  - भेद्यता
+  - हमला
+  - हैकर
+  - पासवर्ड
+  - एन्क्रिप्शन
+  - मैलवेयर

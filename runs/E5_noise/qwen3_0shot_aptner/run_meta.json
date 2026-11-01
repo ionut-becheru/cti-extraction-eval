@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-07T22:35:07Z","end_utc":"2026-09-07T23:10:36Z","wall_seconds":2129,"exit_code":0,
+ "peak_gpu_mem_mib":22304,"mean_gpu_util_pct":94.5,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/llm_ner.py --model Qwen/Qwen3-8B --datasets aptner,aptner__bt-ru,aptner__bt-de,aptner__bt-zh,aptner__bt-es,aptner__defang,aptner__boiler,aptner__lower,aptner__typo --shots 0 --bs 16 --out runs/E5_noise/qwen3_0shot_aptner"}

@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-07T20:40:53Z","end_utc":"2026-09-07T20:42:24Z","wall_seconds":91,"exit_code":0,
+ "peak_gpu_mem_mib":9383,"mean_gpu_util_pct":78.1,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/finetune_ner.py --model cisco-ai/SecureBERT2.0-base --dataset dnrti --schema coarse --seed 13 --out runs/E2_ft/securebert20_dnrti_coarse_s13 --eval-on aptner,dnrti,cyner,annoctr,attacker --epochs 5"}

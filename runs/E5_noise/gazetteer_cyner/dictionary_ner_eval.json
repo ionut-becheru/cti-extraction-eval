@@ -1,0 +1,1369 @@
+{
+ "cyner_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 936,
+  "gold_uncovered": 383,
+  "gold_uncovered_pct": 40.9,
+  "unscorable_predictions": {
+   "MITRE_TECHNIQUE": 6
+  },
+  "metrics": {
+   "INDICATOR": {
+    "P": 0.5625,
+    "R": 0.0897,
+    "F1": 0.1547,
+    "P_relaxed": 0.9583,
+    "R_relaxed": 0.1528,
+    "F1_relaxed": 0.2636,
+    "n_pred": 48,
+    "n_gold": 301,
+    "ci95": {
+     "P": [
+      0.3484,
+      0.8235
+     ],
+     "R": [
+      0.0498,
+      0.1373
+     ],
+     "F1": [
+      0.0895,
+      0.2275
+     ],
+     "F1_relaxed": [
+      0.1672,
+      0.3587
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 11,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 1.0,
+    "R": 0.062,
+    "F1": 0.1167,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.062,
+    "F1_relaxed": 0.1167,
+    "n_pred": 15,
+    "n_gold": 242,
+    "ci95": {
+     "P": [
+      1.0,
+      1.0
+     ],
+     "R": [
+      0.0291,
+      0.0992
+     ],
+     "F1": [
+      0.0566,
+      0.1805
+     ],
+     "F1_relaxed": [
+      0.0566,
+      0.1805
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 1.0,
+    "R": 0.5,
+    "F1": 0.6667,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.5,
+    "F1_relaxed": 0.6667,
+    "n_pred": 5,
+    "n_gold": 10,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.7143
+     ],
+     "F1": [
+      0.0,
+      0.8333
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.8333
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.5949,
+    "R": 0.085,
+    "F1": 0.1487,
+    "P_relaxed": 0.8354,
+    "R_relaxed": 0.1193,
+    "F1_relaxed": 0.2089,
+    "n_pred": 79,
+    "n_gold": 553,
+    "ci95": {
+     "P": [
+      0.4383,
+      0.76
+     ],
+     "R": [
+      0.0568,
+      0.1184
+     ],
+     "F1": [
+      0.1012,
+      0.2025
+     ],
+     "F1_relaxed": [
+      0.1458,
+      0.2738
+     ]
+    }
+   }
+  }
+ },
+ "cyner__bt-ru_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 258,
+  "gold_uncovered": 0,
+  "gold_uncovered_pct": 0.0,
+  "unscorable_predictions": {
+   "CRYPTO_WALLET": 1,
+   "MITRE_TECHNIQUE": 4
+  },
+  "metrics": {
+   "INDICATOR": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 17,
+    "n_gold": 79,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 10,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 0.875,
+    "R": 0.0398,
+    "F1": 0.0761,
+    "P_relaxed": 0.875,
+    "R_relaxed": 0.0398,
+    "F1_relaxed": 0.0761,
+    "n_pred": 8,
+    "n_gold": 176,
+    "ci95": {
+     "P": [
+      0.5,
+      1.0
+     ],
+     "R": [
+      0.0113,
+      0.0739
+     ],
+     "F1": [
+      0.0221,
+      0.1364
+     ],
+     "F1_relaxed": [
+      0.0221,
+      0.1364
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 1.0,
+    "R": 0.3333,
+    "F1": 0.5,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.3333,
+    "F1_relaxed": 0.5,
+    "n_pred": 1,
+    "n_gold": 3,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.5
+     ],
+     "F1": [
+      0.0,
+      0.6667
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.6667
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.2222,
+    "R": 0.031,
+    "F1": 0.0544,
+    "P_relaxed": 0.2222,
+    "R_relaxed": 0.031,
+    "F1_relaxed": 0.0544,
+    "n_pred": 36,
+    "n_gold": 258,
+    "ci95": {
+     "P": [
+      0.0811,
+      0.4063
+     ],
+     "R": [
+      0.0114,
+      0.0538
+     ],
+     "F1": [
+      0.0202,
+      0.0926
+     ],
+     "F1_relaxed": [
+      0.0202,
+      0.0926
+     ]
+    }
+   }
+  }
+ },
+ "cyner__bt-de_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 488,
+  "gold_uncovered": 0,
+  "gold_uncovered_pct": 0.0,
+  "unscorable_predictions": {
+   "MITRE_TECHNIQUE": 6
+  },
+  "metrics": {
+   "INDICATOR": {
+    "P": 0.4762,
+    "R": 0.081,
+    "F1": 0.1384,
+    "P_relaxed": 0.5714,
+    "R_relaxed": 0.0972,
+    "F1_relaxed": 0.1661,
+    "n_pred": 42,
+    "n_gold": 247,
+    "ci95": {
+     "P": [
+      0.2367,
+      0.7715
+     ],
+     "R": [
+      0.0403,
+      0.1284
+     ],
+     "F1": [
+      0.0702,
+      0.2135
+     ],
+     "F1_relaxed": [
+      0.0894,
+      0.2445
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 14,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 1.0,
+    "R": 0.0603,
+    "F1": 0.1138,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.0603,
+    "F1_relaxed": 0.1138,
+    "n_pred": 14,
+    "n_gold": 232,
+    "ci95": {
+     "P": [
+      1.0,
+      1.0
+     ],
+     "R": [
+      0.0247,
+      0.0979
+     ],
+     "F1": [
+      0.0483,
+      0.1783
+     ],
+     "F1_relaxed": [
+      0.0483,
+      0.1783
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 1.0,
+    "R": 0.5556,
+    "F1": 0.7143,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.5556,
+    "F1_relaxed": 0.7143,
+    "n_pred": 5,
+    "n_gold": 9,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.7143
+     ],
+     "F1": [
+      0.0,
+      0.8333
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.8333
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.52,
+    "R": 0.0799,
+    "F1": 0.1385,
+    "P_relaxed": 0.5733,
+    "R_relaxed": 0.0881,
+    "F1_relaxed": 0.1528,
+    "n_pred": 75,
+    "n_gold": 488,
+    "ci95": {
+     "P": [
+      0.3441,
+      0.6957
+     ],
+     "R": [
+      0.0469,
+      0.116
+     ],
+     "F1": [
+      0.083,
+      0.1957
+     ],
+     "F1_relaxed": [
+      0.0989,
+      0.2128
+     ]
+    }
+   }
+  }
+ },
+ "cyner__bt-zh_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 128,
+  "gold_uncovered": 0,
+  "gold_uncovered_pct": 0.0,
+  "unscorable_predictions": {
+   "CRYPTO_WALLET": 2,
+   "CAMPAIGN": 1,
+   "MITRE_TECHNIQUE": 5
+  },
+  "metrics": {
+   "INDICATOR": {
+    "P": 0.0385,
+    "R": 0.0238,
+    "F1": 0.0294,
+    "P_relaxed": 0.0385,
+    "R_relaxed": 0.0238,
+    "F1_relaxed": 0.0294,
+    "n_pred": 26,
+    "n_gold": 42,
+    "ci95": {
+     "P": [
+      0.0,
+      0.1538
+     ],
+     "R": [
+      0.0,
+      0.0755
+     ],
+     "F1": [
+      0.0,
+      0.0923
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0923
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 14,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 1.0,
+    "R": 0.0247,
+    "F1": 0.0482,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.0247,
+    "F1_relaxed": 0.0482,
+    "n_pred": 2,
+    "n_gold": 81,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.0579
+     ],
+     "F1": [
+      0.0,
+      0.1094
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.1094
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 0.6667,
+    "R": 0.8,
+    "F1": 0.7273,
+    "P_relaxed": 0.6667,
+    "R_relaxed": 0.8,
+    "F1_relaxed": 0.7273,
+    "n_pred": 6,
+    "n_gold": 5,
+    "ci95": {
+     "P": [
+      0.0,
+      0.6667
+     ],
+     "R": [
+      0.0,
+      0.8
+     ],
+     "F1": [
+      0.0,
+      0.7273
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.7273
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.1458,
+    "R": 0.0547,
+    "F1": 0.0795,
+    "P_relaxed": 0.1458,
+    "R_relaxed": 0.0547,
+    "F1_relaxed": 0.0795,
+    "n_pred": 48,
+    "n_gold": 128,
+    "ci95": {
+     "P": [
+      0.0192,
+      0.3201
+     ],
+     "R": [
+      0.0074,
+      0.1228
+     ],
+     "F1": [
+      0.0109,
+      0.1702
+     ],
+     "F1_relaxed": [
+      0.0109,
+      0.1702
+     ]
+    }
+   }
+  }
+ },
+ "cyner__bt-es_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 472,
+  "gold_uncovered": 0,
+  "gold_uncovered_pct": 0.0,
+  "unscorable_predictions": {
+   "MITRE_TECHNIQUE": 6
+  },
+  "metrics": {
+   "INDICATOR": {
+    "P": 0.5,
+    "R": 0.0699,
+    "F1": 0.1226,
+    "P_relaxed": 0.5938,
+    "R_relaxed": 0.083,
+    "F1_relaxed": 0.1456,
+    "n_pred": 32,
+    "n_gold": 229,
+    "ci95": {
+     "P": [
+      0.2701,
+      0.7728
+     ],
+     "R": [
+      0.0308,
+      0.1183
+     ],
+     "F1": [
+      0.0561,
+      0.202
+     ],
+     "F1_relaxed": [
+      0.0657,
+      0.229
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 13,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 1.0,
+    "R": 0.0558,
+    "F1": 0.1057,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.0558,
+    "F1_relaxed": 0.1057,
+    "n_pred": 13,
+    "n_gold": 233,
+    "ci95": {
+     "P": [
+      1.0,
+      1.0
+     ],
+     "R": [
+      0.0216,
+      0.0923
+     ],
+     "F1": [
+      0.0424,
+      0.1689
+     ],
+     "F1_relaxed": [
+      0.0424,
+      0.1689
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 1.0,
+    "R": 0.5,
+    "F1": 0.6667,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.5,
+    "F1_relaxed": 0.6667,
+    "n_pred": 5,
+    "n_gold": 10,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.7143
+     ],
+     "F1": [
+      0.0,
+      0.8333
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.8333
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.5397,
+    "R": 0.072,
+    "F1": 0.1271,
+    "P_relaxed": 0.5873,
+    "R_relaxed": 0.0784,
+    "F1_relaxed": 0.1383,
+    "n_pred": 63,
+    "n_gold": 472,
+    "ci95": {
+     "P": [
+      0.3858,
+      0.7015
+     ],
+     "R": [
+      0.0429,
+      0.1102
+     ],
+     "F1": [
+      0.0779,
+      0.1882
+     ],
+     "F1_relaxed": [
+      0.0869,
+      0.2011
+     ]
+    }
+   }
+  }
+ },
+ "cyner__defang_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 553,
+  "gold_uncovered": 0,
+  "gold_uncovered_pct": 0.0,
+  "unscorable_predictions": {
+   "MITRE_TECHNIQUE": 6
+  },
+  "metrics": {
+   "INDICATOR": {
+    "P": 1.0,
+    "R": 0.0764,
+    "F1": 0.142,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.0764,
+    "F1_relaxed": 0.142,
+    "n_pred": 23,
+    "n_gold": 301,
+    "ci95": {
+     "P": [
+      1.0,
+      1.0
+     ],
+     "R": [
+      0.0345,
+      0.1202
+     ],
+     "F1": [
+      0.0666,
+      0.2145
+     ],
+     "F1_relaxed": [
+      0.0666,
+      0.2145
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 11,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 1.0,
+    "R": 0.062,
+    "F1": 0.1167,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.062,
+    "F1_relaxed": 0.1167,
+    "n_pred": 15,
+    "n_gold": 242,
+    "ci95": {
+     "P": [
+      1.0,
+      1.0
+     ],
+     "R": [
+      0.0282,
+      0.0975
+     ],
+     "F1": [
+      0.0549,
+      0.1776
+     ],
+     "F1_relaxed": [
+      0.0549,
+      0.1776
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 1.0,
+    "R": 0.5,
+    "F1": 0.6667,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.5,
+    "F1_relaxed": 0.6667,
+    "n_pred": 5,
+    "n_gold": 10,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.7143
+     ],
+     "F1": [
+      0.0,
+      0.8333
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.8333
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.7963,
+    "R": 0.0778,
+    "F1": 0.1417,
+    "P_relaxed": 0.7963,
+    "R_relaxed": 0.0778,
+    "F1_relaxed": 0.1417,
+    "n_pred": 54,
+    "n_gold": 553,
+    "ci95": {
+     "P": [
+      0.6665,
+      0.9016
+     ],
+     "R": [
+      0.0494,
+      0.1099
+     ],
+     "F1": [
+      0.092,
+      0.1945
+     ],
+     "F1_relaxed": [
+      0.092,
+      0.1945
+     ]
+    }
+   }
+  }
+ },
+ "cyner__boiler_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 553,
+  "gold_uncovered": 0,
+  "gold_uncovered_pct": 0.0,
+  "unscorable_predictions": {
+   "MITRE_TECHNIQUE": 6
+  },
+  "metrics": {
+   "INDICATOR": {
+    "P": 0.5625,
+    "R": 0.0897,
+    "F1": 0.1547,
+    "P_relaxed": 0.9583,
+    "R_relaxed": 0.1528,
+    "F1_relaxed": 0.2636,
+    "n_pred": 48,
+    "n_gold": 301,
+    "ci95": {
+     "P": [
+      0.3513,
+      0.8164
+     ],
+     "R": [
+      0.0486,
+      0.1368
+     ],
+     "F1": [
+      0.0878,
+      0.2294
+     ],
+     "F1_relaxed": [
+      0.1685,
+      0.3554
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 15,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 1.0,
+    "R": 0.062,
+    "F1": 0.1167,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.062,
+    "F1_relaxed": 0.1167,
+    "n_pred": 15,
+    "n_gold": 242,
+    "ci95": {
+     "P": [
+      1.0,
+      1.0
+     ],
+     "R": [
+      0.0302,
+      0.0974
+     ],
+     "F1": [
+      0.0586,
+      0.1775
+     ],
+     "F1_relaxed": [
+      0.0586,
+      0.1775
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 1.0,
+    "R": 0.5,
+    "F1": 0.6667,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.5,
+    "F1_relaxed": 0.6667,
+    "n_pred": 5,
+    "n_gold": 10,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.7143
+     ],
+     "F1": [
+      0.0,
+      0.8333
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.8333
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.5663,
+    "R": 0.085,
+    "F1": 0.1478,
+    "P_relaxed": 0.7952,
+    "R_relaxed": 0.1193,
+    "F1_relaxed": 0.2075,
+    "n_pred": 83,
+    "n_gold": 553,
+    "ci95": {
+     "P": [
+      0.4066,
+      0.725
+     ],
+     "R": [
+      0.0567,
+      0.1192
+     ],
+     "F1": [
+      0.0998,
+      0.2033
+     ],
+     "F1_relaxed": [
+      0.1442,
+      0.274
+     ]
+    }
+   }
+  }
+ },
+ "cyner__lower_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 553,
+  "gold_uncovered": 0,
+  "gold_uncovered_pct": 0.0,
+  "unscorable_predictions": {},
+  "metrics": {
+   "INDICATOR": {
+    "P": 0.5625,
+    "R": 0.0897,
+    "F1": 0.1547,
+    "P_relaxed": 0.9583,
+    "R_relaxed": 0.1528,
+    "F1_relaxed": 0.2636,
+    "n_pred": 48,
+    "n_gold": 301,
+    "ci95": {
+     "P": [
+      0.3542,
+      0.8071
+     ],
+     "R": [
+      0.0482,
+      0.1332
+     ],
+     "F1": [
+      0.0861,
+      0.2235
+     ],
+     "F1_relaxed": [
+      0.1661,
+      0.3545
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 6,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 1.0,
+    "R": 0.062,
+    "F1": 0.1167,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.062,
+    "F1_relaxed": 0.1167,
+    "n_pred": 15,
+    "n_gold": 242,
+    "ci95": {
+     "P": [
+      1.0,
+      1.0
+     ],
+     "R": [
+      0.0302,
+      0.1013
+     ],
+     "F1": [
+      0.0586,
+      0.184
+     ],
+     "F1_relaxed": [
+      0.0586,
+      0.184
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 1.0,
+    "R": 0.5,
+    "F1": 0.6667,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.5,
+    "F1_relaxed": 0.6667,
+    "n_pred": 5,
+    "n_gold": 10,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.7143
+     ],
+     "F1": [
+      0.0,
+      0.8333
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.8333
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.6351,
+    "R": 0.085,
+    "F1": 0.1499,
+    "P_relaxed": 0.8919,
+    "R_relaxed": 0.1193,
+    "F1_relaxed": 0.2105,
+    "n_pred": 74,
+    "n_gold": 553,
+    "ci95": {
+     "P": [
+      0.4687,
+      0.8001
+     ],
+     "R": [
+      0.0536,
+      0.1175
+     ],
+     "F1": [
+      0.0976,
+      0.2033
+     ],
+     "F1_relaxed": [
+      0.1473,
+      0.2733
+     ]
+    }
+   }
+  }
+ },
+ "cyner__typo_test": {
+  "n_sentences": 748,
+  "gold_mentions_total": 553,
+  "gold_uncovered": 0,
+  "gold_uncovered_pct": 0.0,
+  "unscorable_predictions": {
+   "MITRE_TECHNIQUE": 6
+  },
+  "metrics": {
+   "INDICATOR": {
+    "P": 0.5625,
+    "R": 0.0897,
+    "F1": 0.1547,
+    "P_relaxed": 0.9583,
+    "R_relaxed": 0.1528,
+    "F1_relaxed": 0.2636,
+    "n_pred": 48,
+    "n_gold": 301,
+    "ci95": {
+     "P": [
+      0.3611,
+      0.8182
+     ],
+     "R": [
+      0.0493,
+      0.1358
+     ],
+     "F1": [
+      0.0883,
+      0.2278
+     ],
+     "F1_relaxed": [
+      0.1651,
+      0.3568
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "P_relaxed": 0.0,
+    "R_relaxed": 0.0,
+    "F1_relaxed": 0.0,
+    "n_pred": 13,
+    "n_gold": 0,
+    "ci95": {
+     "P": [
+      0.0,
+      0.0
+     ],
+     "R": [
+      0.0,
+      0.0
+     ],
+     "F1": [
+      0.0,
+      0.0
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 1.0,
+    "R": 0.062,
+    "F1": 0.1167,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.062,
+    "F1_relaxed": 0.1167,
+    "n_pred": 15,
+    "n_gold": 242,
+    "ci95": {
+     "P": [
+      1.0,
+      1.0
+     ],
+     "R": [
+      0.0303,
+      0.1012
+     ],
+     "F1": [
+      0.0588,
+      0.1838
+     ],
+     "F1_relaxed": [
+      0.0588,
+      0.1838
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 1.0,
+    "R": 0.5,
+    "F1": 0.6667,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.5,
+    "F1_relaxed": 0.6667,
+    "n_pred": 5,
+    "n_gold": 10,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.7143
+     ],
+     "F1": [
+      0.0,
+      0.8333
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.8333
+     ]
+    }
+   },
+   "MICRO_ALL": {
+    "P": 0.5802,
+    "R": 0.085,
+    "F1": 0.1483,
+    "P_relaxed": 0.8148,
+    "R_relaxed": 0.1193,
+    "F1_relaxed": 0.2082,
+    "n_pred": 81,
+    "n_gold": 553,
+    "ci95": {
+     "P": [
+      0.4458,
+      0.7419
+     ],
+     "R": [
+      0.0575,
+      0.1204
+     ],
+     "F1": [
+      0.103,
+      0.2056
+     ],
+     "F1_relaxed": [
+      0.1489,
+      0.2711
+     ]
+    }
+   }
+  }
+ },
+ "_meta": {
+  "seconds": 33.2,
+  "boot": 1000,
+  "seed": 0,
+  "ner": "experiments/baseline/src/cybersec_ner.py (thesis copy)",
+  "config": "experiments/runs/B0_asrun/config.yaml nlp section"
+ }
+}

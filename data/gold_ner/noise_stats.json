@@ -1,0 +1,170 @@
+{
+ "aptner__bt-ru": {
+  "sentences": 1545,
+  "gold_mentions": 2572,
+  "dropped_gold": 995,
+  "dropped_pct": 38.7,
+  "seconds": 66.7
+ },
+ "cyner__bt-ru": {
+  "sentences": 748,
+  "gold_mentions": 553,
+  "dropped_gold": 295,
+  "dropped_pct": 53.3,
+  "seconds": 37.8
+ },
+ "annoctr__bt-ru": {
+  "sentences": 3059,
+  "gold_mentions": 875,
+  "dropped_gold": 383,
+  "dropped_pct": 43.8,
+  "seconds": 239.8
+ },
+ "aptner__bt-de": {
+  "sentences": 1545,
+  "gold_mentions": 2572,
+  "dropped_gold": 279,
+  "dropped_pct": 10.8,
+  "seconds": 170.8
+ },
+ "cyner__bt-de": {
+  "sentences": 748,
+  "gold_mentions": 553,
+  "dropped_gold": 65,
+  "dropped_pct": 11.8,
+  "seconds": 71.7
+ },
+ "annoctr__bt-de": {
+  "sentences": 3059,
+  "gold_mentions": 875,
+  "dropped_gold": 148,
+  "dropped_pct": 16.9,
+  "seconds": 391.3
+ },
+ "aptner__bt-zh": {
+  "sentences": 1545,
+  "gold_mentions": 2572,
+  "dropped_gold": 1299,
+  "dropped_pct": 50.5,
+  "seconds": 40.7
+ },
+ "cyner__bt-zh": {
+  "sentences": 748,
+  "gold_mentions": 553,
+  "dropped_gold": 425,
+  "dropped_pct": 76.9,
+  "seconds": 31.8
+ },
+ "annoctr__bt-zh": {
+  "sentences": 3059,
+  "gold_mentions": 875,
+  "dropped_gold": 479,
+  "dropped_pct": 54.7,
+  "seconds": 255.5
+ },
+ "aptner__bt-es": {
+  "sentences": 1545,
+  "gold_mentions": 2572,
+  "dropped_gold": 239,
+  "dropped_pct": 9.3,
+  "seconds": 43.0
+ },
+ "cyner__bt-es": {
+  "sentences": 748,
+  "gold_mentions": 553,
+  "dropped_gold": 81,
+  "dropped_pct": 14.6,
+  "seconds": 22.4
+ },
+ "annoctr__bt-es": {
+  "sentences": 3059,
+  "gold_mentions": 875,
+  "dropped_gold": 105,
+  "dropped_pct": 12.0,
+  "seconds": 195.3
+ },
+ "aptner__defang": {
+  "sentences": 1545,
+  "gold_mentions": 2572,
+  "dropped_gold": 0,
+  "dropped_pct": 0.0,
+  "seconds": 0.1
+ },
+ "cyner__defang": {
+  "sentences": 748,
+  "gold_mentions": 553,
+  "dropped_gold": 0,
+  "dropped_pct": 0.0,
+  "seconds": 0.1
+ },
+ "annoctr__defang": {
+  "sentences": 3059,
+  "gold_mentions": 875,
+  "dropped_gold": 1,
+  "dropped_pct": 0.1,
+  "seconds": 0.1
+ },
+ "aptner__boiler": {
+  "sentences": 1545,
+  "gold_mentions": 2572,
+  "dropped_gold": 0,
+  "dropped_pct": 0.0,
+  "seconds": 0.1
+ },
+ "cyner__boiler": {
+  "sentences": 748,
+  "gold_mentions": 553,
+  "dropped_gold": 0,
+  "dropped_pct": 0.0,
+  "seconds": 0.0
+ },
+ "annoctr__boiler": {
+  "sentences": 3059,
+  "gold_mentions": 875,
+  "dropped_gold": 1,
+  "dropped_pct": 0.1,
+  "seconds": 0.1
+ },
+ "aptner__lower": {
+  "sentences": 1545,
+  "gold_mentions": 2572,
+  "dropped_gold": 0,
+  "dropped_pct": 0.0,
+  "seconds": 0.1
+ },
+ "cyner__lower": {
+  "sentences": 748,
+  "gold_mentions": 553,
+  "dropped_gold": 0,
+  "dropped_pct": 0.0,
+  "seconds": 0.0
+ },
+ "annoctr__lower": {
+  "sentences": 3059,
+  "gold_mentions": 875,
+  "dropped_gold": 1,
+  "dropped_pct": 0.1,
+  "seconds": 0.1
+ },
+ "aptner__typo": {
+  "sentences": 1545,
+  "gold_mentions": 2572,
+  "dropped_gold": 0,
+  "dropped_pct": 0.0,
+  "seconds": 0.1
+ },
+ "cyner__typo": {
+  "sentences": 748,
+  "gold_mentions": 553,
+  "dropped_gold": 0,
+  "dropped_pct": 0.0,
+  "seconds": 0.0
+ },
+ "annoctr__typo": {
+  "sentences": 3059,
+  "gold_mentions": 875,
+  "dropped_gold": 1,
+  "dropped_pct": 0.1,
+  "seconds": 0.1
+ }
+}

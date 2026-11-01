@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-07T21:33:13Z","end_utc":"2026-09-07T21:52:15Z","wall_seconds":1142,"exit_code":0,
+ "peak_gpu_mem_mib":32063,"mean_gpu_util_pct":96.0,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/llm_ner.py --model Qwen/Qwen3-8B --datasets aptner,dnrti,cyner,annoctr,attacker --shots 5 --bs 16 --out runs/E4_llm/qwen3_8b_5shot"}

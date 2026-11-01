@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-08T00:11:46Z","end_utc":"2026-09-08T00:13:29Z","wall_seconds":103,"exit_code":0,
+ "peak_gpu_mem_mib":11606,"mean_gpu_util_pct":46.4,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/zeroshot_span_ner.py --model numind/NuNER_Zero --datasets aptner,dnrti,cyner,annoctr,attacker --out runs/E3_zs/nuner_zero --bs 2"}

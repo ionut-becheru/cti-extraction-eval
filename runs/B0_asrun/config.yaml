@@ -1,0 +1,169 @@
+paths:
+  input_dataset: data/input/public_cyber_corpus.json
+  output_file: runs/B0_asrun/translated_dataset.jsonl
+  checkpoint_dir: runs/B0_asrun/checkpoints
+  log_dir: runs/B0_asrun/logs
+  models_cache: models
+language_detection:
+  backend: glotlid
+  model_path: models/glotlid/model_v3.bin
+  confidence_threshold: 0.5
+translation:
+  strategy: nllb
+  read_batch_size: 128
+  translation_batch_size: 32
+  language_models:
+    ru: Helsinki-NLP/opus-mt-ru-en
+    de: Helsinki-NLP/opus-mt-de-en
+    fr: Helsinki-NLP/opus-mt-fr-en
+    es: Helsinki-NLP/opus-mt-es-en
+    it: Helsinki-NLP/opus-mt-it-en
+    pt: Helsinki-NLP/opus-mt-tc-big-pt-en
+    nl: Helsinki-NLP/opus-mt-nl-en
+    pl: Helsinki-NLP/opus-mt-pl-en
+    cs: Helsinki-NLP/opus-mt-cs-en
+    sv: Helsinki-NLP/opus-mt-sv-en
+    'no': Helsinki-NLP/opus-mt-no-en
+    da: Helsinki-NLP/opus-mt-da-en
+    fi: Helsinki-NLP/opus-mt-fi-en
+    et: Helsinki-NLP/opus-mt-et-en
+    tr: Helsinki-NLP/opus-mt-tr-en
+    ar: Helsinki-NLP/opus-mt-ar-en
+    he: Helsinki-NLP/opus-mt-he-en
+    zh: Helsinki-NLP/opus-mt-zh-en
+    ja: Helsinki-NLP/opus-mt-ja-en
+    ko: Helsinki-NLP/opus-mt-ko-en
+    vi: Helsinki-NLP/opus-mt-vi-en
+    th: Helsinki-NLP/opus-mt-th-en
+    id: Helsinki-NLP/opus-mt-id-en
+    hi: Helsinki-NLP/opus-mt-hi-en
+    bg: Helsinki-NLP/opus-mt-bg-en
+    el: Helsinki-NLP/opus-mt-el-en
+    ro: Helsinki-NLP/opus-mt-ro-en
+    uk: Helsinki-NLP/opus-mt-uk-en
+    hr: Helsinki-NLP/opus-mt-hr-en
+    sk: Helsinki-NLP/opus-mt-sk-en
+    sl: Helsinki-NLP/opus-mt-sl-en
+    lt: Helsinki-NLP/opus-mt-lt-en
+    lv: Helsinki-NLP/opus-mt-lv-en
+  fallback_model: facebook/nllb-200-distilled-600M
+  max_length: 512
+  num_beams: 1
+  early_stopping: true
+  max_translate_chars: 20000
+  max_retries: 3
+  retry_beam_sizes:
+  - 4
+  - 2
+  - 1
+gpu:
+  enabled: true
+  device: cuda
+  mixed_precision: true
+  max_models_in_memory: 6
+checkpoint:
+  frequency: 1000
+  keep_last_n: 3
+logging:
+  level: INFO
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  file_prefix: translation_pipeline
+processing:
+  skip_english: true
+  validate_translations: true
+  min_text_length: 50
+  max_text_length: 50000
+  enable_content_cleaning: true
+  remove_html_tags: true
+  remove_urls: false
+  min_word_count: 3
+  enable_relevance_filter: true
+  enable_cybersecurity_filter: true
+  min_cybersecurity_keywords: 1
+  enable_spam_filter: true
+  enable_pre_translation_filter: true
+  pre_translation_min_length: 200
+  enable_sentence_processing: false
+  min_sentence_length: 15
+  max_sentence_length: 500
+  merge_short_sentences: true
+refinement:
+  enabled: false
+  model_type: local
+  model_name: mistralai/Mistral-7B-Instruct-v0.2
+  openai_api_key: ''
+  cache_enabled: true
+  cache_dir: runs/B0_asrun/refinement_cache
+  batch_size: 8
+  max_text_length: 2000
+  min_slang_count: 2
+nlp:
+  enable_threat_classifier: true
+  threat_classifier_model: distilbert-base-uncased
+  threat_classifier_threshold: 0.5
+  enable_cybersec_ner: true
+  ner_model: en_core_web_sm
+  extract_entities:
+  - CVE
+  - MALWARE
+  - THREAT_ACTOR
+  - TOOL
+  - IP
+  - HASH
+  - DOMAIN
+  - URL
+  - EMAIL
+  - CRYPTO_WALLET
+  enable_signal_aggregator: true
+  keyword_weight: 0.3
+  classifier_weight: 0.4
+  ner_weight: 0.3
+  risk_threshold: 0.6
+  actionable_threshold: 0.7
+correlation:
+  enabled: true
+  enable_threat_feeds: false
+  misp_url: ''
+  misp_key: ''
+  otx_key: ''
+  nvd_api_key: ''
+  feed_cache_ttl: 3600
+  enable_correlation: true
+  correlation_threshold: 0.7
+storage:
+  database_type: sqlite
+  database_path: runs/B0_asrun/threat_intel.db
+  pg_host: localhost
+  pg_port: 5432
+  pg_database: threat_intel
+  pg_user: postgres
+  pg_password: ''
+  elasticsearch_url: ''
+  enable_alerting: true
+  alert_threshold: 0.7
+  siem_export_format: json
+  siem_export_path: runs/B0_asrun/alerts
+relevance:
+  classifier_dir: ''
+  zero_shot_enabled: false
+  zero_shot_model: MoritzLaurer/deberta-v3-large-zeroshot-v2.0
+  classifier_threshold: 0.7
+analysis:
+  enabled: true
+  write_to_db: true
+  write_jsonl: true
+alerting:
+  enable_alerting: true
+  alert_threshold: 0.7
+  siem_export_format: json
+  siem_export_path: runs/B0_asrun/alerts
+graph_db:
+  enabled: false
+  host: 127.0.0.1
+  port: 6379
+  password: ''
+  graph_name: darkweb_threat_intel
+dashboard:
+  title: DarkWeb Threat Intel Dashboard
+  refresh_interval: 30
+  max_records_display: 100

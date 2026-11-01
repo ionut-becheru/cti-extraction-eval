@@ -1,0 +1,98 @@
+{
+ "aptner__bt-ru": {
+  "DOMAIN": 47.7,
+  "TOOL": 64.2,
+  "EMAIL": 21.7,
+  "THREAT_ACTOR": 63.6,
+  "LOCATION": 83.1,
+  "MALWARE": 64.7,
+  "FILE": 37.5,
+  "IP": 40.0,
+  "HASH": 0.0,
+  "URL": 37.5,
+  "VULNERABILITY": 34.0
+ },
+ "aptner__bt-de": {
+  "DOMAIN": 84.1,
+  "TOOL": 91.1,
+  "EMAIL": 43.5,
+  "THREAT_ACTOR": 92.5,
+  "LOCATION": 92.2,
+  "MALWARE": 92.7,
+  "FILE": 81.2,
+  "IP": 65.7,
+  "HASH": 28.8,
+  "URL": 62.5,
+  "VULNERABILITY": 94.0
+ },
+ "aptner__bt-zh": {
+  "DOMAIN": 27.3,
+  "TOOL": 58.2,
+  "EMAIL": 17.4,
+  "THREAT_ACTOR": 45.6,
+  "LOCATION": 65.1,
+  "MALWARE": 46.8,
+  "FILE": 33.3,
+  "IP": 22.9,
+  "HASH": 1.7,
+  "URL": 12.5,
+  "VULNERABILITY": 68.0
+ },
+ "aptner__bt-es": {
+  "DOMAIN": 95.5,
+  "TOOL": 91.4,
+  "EMAIL": 100.0,
+  "THREAT_ACTOR": 96.0,
+  "LOCATION": 92.2,
+  "MALWARE": 92.0,
+  "FILE": 83.3,
+  "IP": 80.0,
+  "HASH": 32.2,
+  "URL": 75.0,
+  "VULNERABILITY": 88.0
+ },
+ "cyner__bt-ru": {
+  "VULNERABILITY": 30.0,
+  "MALWARE": 72.7,
+  "INDICATOR": 26.2
+ },
+ "cyner__bt-de": {
+  "VULNERABILITY": 90.0,
+  "MALWARE": 95.9,
+  "INDICATOR": 82.1
+ },
+ "cyner__bt-zh": {
+  "VULNERABILITY": 50.0,
+  "MALWARE": 33.5,
+  "INDICATOR": 14.0
+ },
+ "cyner__bt-es": {
+  "VULNERABILITY": 100.0,
+  "MALWARE": 96.3,
+  "INDICATOR": 76.1
+ },
+ "annoctr__bt-ru": {
+  "MALWARE": 42.3,
+  "LOCATION": 83.6,
+  "TOOL": 46.2,
+  "THREAT_ACTOR": 62.0
+ },
+ "annoctr__bt-de": {
+  "MALWARE": 78.6,
+  "LOCATION": 88.9,
+  "TOOL": 90.4,
+  "THREAT_ACTOR": 85.0
+ },
+ "annoctr__bt-zh": {
+  "MALWARE": 43.2,
+  "LOCATION": 60.8,
+  "TOOL": 21.2,
+  "THREAT_ACTOR": 41.3
+ },
+ "annoctr__bt-es": {
+  "MALWARE": 88.4,
+  "LOCATION": 85.7,
+  "TOOL": 94.2,
+  "THREAT_ACTOR": 87.8
+ }
+}

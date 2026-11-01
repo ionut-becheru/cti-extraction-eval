@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-07T21:07:11Z","end_utc":"2026-09-07T21:08:47Z","wall_seconds":96,"exit_code":0,
+ "peak_gpu_mem_mib":7324,"mean_gpu_util_pct":61.0,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/finetune_ner.py --model microsoft/deberta-v3-base --dataset dnrti --schema coarse --seed 13 --out runs/E2_ft/deberta-v3_dnrti_coarse_s13 --eval-on aptner,dnrti,cyner,annoctr,attacker --epochs 5"}

@@ -1,0 +1,1190 @@
+{
+ "model": "urchade/gliner_large-v2.1",
+ "labels": {
+  "threat actor or APT group": "THREAT_ACTOR",
+  "malware family or malicious software": "MALWARE",
+  "software tool or utility": "TOOL",
+  "vulnerability or CVE identifier": "VULNERABILITY",
+  "IP address": "IP",
+  "file hash": "HASH",
+  "domain name": "DOMAIN",
+  "URL": "URL",
+  "email address": "EMAIL",
+  "file name or file path": "FILE",
+  "location or country": "LOCATION"
+ },
+ "eval": {
+  "cyner": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.2846,
+     "R": 0.2326,
+     "F1": 0.2559,
+     "P_relaxed": 0.5691,
+     "R_relaxed": 0.4651,
+     "F1_relaxed": 0.5119,
+     "n_pred": 246,
+     "n_gold": 301,
+     "ci95": {
+      "P": [
+       0.2033,
+       0.3737
+      ],
+      "R": [
+       0.166,
+       0.3053
+      ],
+      "F1": [
+       0.1832,
+       0.3305
+      ],
+      "F1_relaxed": [
+       0.4355,
+       0.5829
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.5163,
+     "R": 0.719,
+     "F1": 0.601,
+     "P_relaxed": 0.5697,
+     "R_relaxed": 0.7934,
+     "F1_relaxed": 0.6632,
+     "n_pred": 337,
+     "n_gold": 242,
+     "ci95": {
+      "P": [
+       0.4548,
+       0.5785
+      ],
+      "R": [
+       0.6556,
+       0.7782
+      ],
+      "F1": [
+       0.5434,
+       0.6548
+      ],
+      "F1_relaxed": [
+       0.6071,
+       0.7138
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.4545,
+     "R": 0.5,
+     "F1": 0.4762,
+     "P_relaxed": 0.4545,
+     "R_relaxed": 0.5,
+     "F1_relaxed": 0.4762,
+     "n_pred": 11,
+     "n_gold": 10,
+     "ci95": {
+      "P": [
+       0.0,
+       0.8333
+      ],
+      "R": [
+       0.0,
+       0.7143
+      ],
+      "F1": [
+       0.0,
+       0.7143
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.7143
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.4192,
+     "R": 0.4503,
+     "F1": 0.4342,
+     "P_relaxed": 0.5673,
+     "R_relaxed": 0.6094,
+     "F1_relaxed": 0.5876,
+     "n_pred": 594,
+     "n_gold": 553,
+     "ci95": {
+      "P": [
+       0.3689,
+       0.47
+      ],
+      "R": [
+       0.395,
+       0.5078
+      ],
+      "F1": [
+       0.387,
+       0.4799
+      ],
+      "F1_relaxed": [
+       0.5408,
+       0.6312
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.1,
+   "n_test": 748
+  },
+  "cyner__bt-ru": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.07,
+     "R": 0.1772,
+     "F1": 0.1004,
+     "P_relaxed": 0.16,
+     "R_relaxed": 0.4051,
+     "F1_relaxed": 0.2294,
+     "n_pred": 200,
+     "n_gold": 79,
+     "ci95": {
+      "P": [
+       0.0343,
+       0.1087
+      ],
+      "R": [
+       0.087,
+       0.283
+      ],
+      "F1": [
+       0.0494,
+       0.1551
+      ],
+      "F1_relaxed": [
+       0.163,
+       0.3011
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.3896,
+     "R": 0.6818,
+     "F1": 0.4959,
+     "P_relaxed": 0.4253,
+     "R_relaxed": 0.7443,
+     "F1_relaxed": 0.5413,
+     "n_pred": 308,
+     "n_gold": 176,
+     "ci95": {
+      "P": [
+       0.3287,
+       0.4506
+      ],
+      "R": [
+       0.6074,
+       0.7566
+      ],
+      "F1": [
+       0.4305,
+       0.5562
+      ],
+      "F1_relaxed": [
+       0.4788,
+       0.6049
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.1111,
+     "R": 0.3333,
+     "F1": 0.1667,
+     "P_relaxed": 0.1111,
+     "R_relaxed": 0.3333,
+     "F1_relaxed": 0.1667,
+     "n_pred": 9,
+     "n_gold": 3,
+     "ci95": {
+      "P": [
+       0.0,
+       0.1852
+      ],
+      "R": [
+       0.0,
+       0.5
+      ],
+      "F1": [
+       0.0,
+       0.2609
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.2609
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.2611,
+     "R": 0.5233,
+     "F1": 0.3484,
+     "P_relaxed": 0.3172,
+     "R_relaxed": 0.6357,
+     "F1_relaxed": 0.4232,
+     "n_pred": 517,
+     "n_gold": 258,
+     "ci95": {
+      "P": [
+       0.221,
+       0.3036
+      ],
+      "R": [
+       0.4552,
+       0.5943
+      ],
+      "F1": [
+       0.2988,
+       0.3989
+      ],
+      "F1_relaxed": [
+       0.3723,
+       0.4773
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.1,
+   "n_test": 748
+  },
+  "cyner__bt-de": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.2409,
+     "R": 0.2146,
+     "F1": 0.227,
+     "P_relaxed": 0.4409,
+     "R_relaxed": 0.3927,
+     "F1_relaxed": 0.4154,
+     "n_pred": 220,
+     "n_gold": 247,
+     "ci95": {
+      "P": [
+       0.1639,
+       0.3275
+      ],
+      "R": [
+       0.148,
+       0.2937
+      ],
+      "F1": [
+       0.1562,
+       0.3038
+      ],
+      "F1_relaxed": [
+       0.3462,
+       0.4888
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.5015,
+     "R": 0.7198,
+     "F1": 0.5912,
+     "P_relaxed": 0.5556,
+     "R_relaxed": 0.7974,
+     "F1_relaxed": 0.6549,
+     "n_pred": 333,
+     "n_gold": 232,
+     "ci95": {
+      "P": [
+       0.4389,
+       0.5629
+      ],
+      "R": [
+       0.6565,
+       0.7769
+      ],
+      "F1": [
+       0.5313,
+       0.6461
+      ],
+      "F1_relaxed": [
+       0.5953,
+       0.7075
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.625,
+     "R": 0.5556,
+     "F1": 0.5882,
+     "P_relaxed": 0.625,
+     "R_relaxed": 0.5556,
+     "F1_relaxed": 0.5882,
+     "n_pred": 8,
+     "n_gold": 9,
+     "ci95": {
+      "P": [
+       0.0,
+       1.0
+      ],
+      "R": [
+       0.0,
+       0.7143
+      ],
+      "F1": [
+       0.0,
+       0.7844
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.7844
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.4011,
+     "R": 0.4611,
+     "F1": 0.429,
+     "P_relaxed": 0.5116,
+     "R_relaxed": 0.5881,
+     "F1_relaxed": 0.5472,
+     "n_pred": 561,
+     "n_gold": 488,
+     "ci95": {
+      "P": [
+       0.3474,
+       0.4537
+      ],
+      "R": [
+       0.4023,
+       0.5226
+      ],
+      "F1": [
+       0.3775,
+       0.4759
+      ],
+      "F1_relaxed": [
+       0.501,
+       0.5936
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.4,
+   "n_test": 748
+  },
+  "cyner__bt-zh": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.0699,
+     "R": 0.3095,
+     "F1": 0.114,
+     "P_relaxed": 0.0806,
+     "R_relaxed": 0.3571,
+     "F1_relaxed": 0.1316,
+     "n_pred": 186,
+     "n_gold": 42,
+     "ci95": {
+      "P": [
+       0.0324,
+       0.1123
+      ],
+      "R": [
+       0.1633,
+       0.4545
+      ],
+      "F1": [
+       0.0541,
+       0.1762
+      ],
+      "F1_relaxed": [
+       0.0713,
+       0.1938
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.25,
+     "R": 0.6543,
+     "F1": 0.3618,
+     "P_relaxed": 0.283,
+     "R_relaxed": 0.7407,
+     "F1_relaxed": 0.4096,
+     "n_pred": 212,
+     "n_gold": 81,
+     "ci95": {
+      "P": [
+       0.1883,
+       0.3178
+      ],
+      "R": [
+       0.5466,
+       0.7632
+      ],
+      "F1": [
+       0.2847,
+       0.4421
+      ],
+      "F1_relaxed": [
+       0.3307,
+       0.4844
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.3636,
+     "R": 0.8,
+     "F1": 0.5,
+     "P_relaxed": 0.3636,
+     "R_relaxed": 0.8,
+     "F1_relaxed": 0.5,
+     "n_pred": 11,
+     "n_gold": 5,
+     "ci95": {
+      "P": [
+       0.0,
+       0.5926
+      ],
+      "R": [
+       0.0,
+       0.8
+      ],
+      "F1": [
+       0.0,
+       0.6809
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.6809
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.1711,
+     "R": 0.5469,
+     "F1": 0.2607,
+     "P_relaxed": 0.1932,
+     "R_relaxed": 0.6172,
+     "F1_relaxed": 0.2942,
+     "n_pred": 409,
+     "n_gold": 128,
+     "ci95": {
+      "P": [
+       0.1301,
+       0.218
+      ],
+      "R": [
+       0.4565,
+       0.6423
+      ],
+      "F1": [
+       0.2055,
+       0.3201
+      ],
+      "F1_relaxed": [
+       0.2413,
+       0.3513
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.0,
+   "n_test": 748
+  },
+  "cyner__bt-es": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.2131,
+     "R": 0.2271,
+     "F1": 0.2199,
+     "P_relaxed": 0.3852,
+     "R_relaxed": 0.4105,
+     "F1_relaxed": 0.3975,
+     "n_pred": 244,
+     "n_gold": 229,
+     "ci95": {
+      "P": [
+       0.1496,
+       0.2787
+      ],
+      "R": [
+       0.1604,
+       0.3
+      ],
+      "F1": [
+       0.1569,
+       0.2832
+      ],
+      "F1_relaxed": [
+       0.3333,
+       0.4646
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.4814,
+     "R": 0.721,
+     "F1": 0.5773,
+     "P_relaxed": 0.533,
+     "R_relaxed": 0.7983,
+     "F1_relaxed": 0.6392,
+     "n_pred": 349,
+     "n_gold": 233,
+     "ci95": {
+      "P": [
+       0.422,
+       0.5389
+      ],
+      "R": [
+       0.6553,
+       0.7761
+      ],
+      "F1": [
+       0.5171,
+       0.6281
+      ],
+      "F1_relaxed": [
+       0.5857,
+       0.6884
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.5,
+     "R": 0.5,
+     "F1": 0.5,
+     "P_relaxed": 0.5,
+     "R_relaxed": 0.5,
+     "F1_relaxed": 0.5,
+     "n_pred": 10,
+     "n_gold": 10,
+     "ci95": {
+      "P": [
+       0.0,
+       0.8342
+      ],
+      "R": [
+       0.0,
+       0.7143
+      ],
+      "F1": [
+       0.0,
+       0.7319
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.7319
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.3731,
+     "R": 0.4767,
+     "F1": 0.4186,
+     "P_relaxed": 0.4726,
+     "R_relaxed": 0.6038,
+     "F1_relaxed": 0.5302,
+     "n_pred": 603,
+     "n_gold": 472,
+     "ci95": {
+      "P": [
+       0.3265,
+       0.4172
+      ],
+      "R": [
+       0.4222,
+       0.5356
+      ],
+      "F1": [
+       0.3716,
+       0.4628
+      ],
+      "F1_relaxed": [
+       0.4899,
+       0.5759
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.1,
+   "n_test": 748
+  },
+  "cyner__defang": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.2845,
+     "R": 0.2193,
+     "F1": 0.2477,
+     "P_relaxed": 0.5431,
+     "R_relaxed": 0.4186,
+     "F1_relaxed": 0.4728,
+     "n_pred": 232,
+     "n_gold": 301,
+     "ci95": {
+      "P": [
+       0.199,
+       0.3773
+      ],
+      "R": [
+       0.1532,
+       0.2943
+      ],
+      "F1": [
+       0.1744,
+       0.3246
+      ],
+      "F1_relaxed": [
+       0.3953,
+       0.5444
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.5163,
+     "R": 0.719,
+     "F1": 0.601,
+     "P_relaxed": 0.5697,
+     "R_relaxed": 0.7934,
+     "F1_relaxed": 0.6632,
+     "n_pred": 337,
+     "n_gold": 242,
+     "ci95": {
+      "P": [
+       0.4548,
+       0.5785
+      ],
+      "R": [
+       0.6556,
+       0.7782
+      ],
+      "F1": [
+       0.5434,
+       0.6548
+      ],
+      "F1_relaxed": [
+       0.6071,
+       0.7138
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.4545,
+     "R": 0.5,
+     "F1": 0.4762,
+     "P_relaxed": 0.4545,
+     "R_relaxed": 0.5,
+     "F1_relaxed": 0.4762,
+     "n_pred": 11,
+     "n_gold": 10,
+     "ci95": {
+      "P": [
+       0.0,
+       0.8333
+      ],
+      "R": [
+       0.0,
+       0.7143
+      ],
+      "F1": [
+       0.0,
+       0.7143
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.7143
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.4224,
+     "R": 0.443,
+     "F1": 0.4325,
+     "P_relaxed": 0.5569,
+     "R_relaxed": 0.5841,
+     "F1_relaxed": 0.5702,
+     "n_pred": 580,
+     "n_gold": 553,
+     "ci95": {
+      "P": [
+       0.3719,
+       0.4746
+      ],
+      "R": [
+       0.388,
+       0.5019
+      ],
+      "F1": [
+       0.3836,
+       0.4787
+      ],
+      "F1_relaxed": [
+       0.5235,
+       0.6147
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.1,
+   "n_test": 748
+  },
+  "cyner__boiler": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.2806,
+     "R": 0.2359,
+     "F1": 0.2563,
+     "P_relaxed": 0.5731,
+     "R_relaxed": 0.4817,
+     "F1_relaxed": 0.5235,
+     "n_pred": 253,
+     "n_gold": 301,
+     "ci95": {
+      "P": [
+       0.1962,
+       0.3707
+      ],
+      "R": [
+       0.1661,
+       0.3125
+      ],
+      "F1": [
+       0.1818,
+       0.3361
+      ],
+      "F1_relaxed": [
+       0.4452,
+       0.6
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.4249,
+     "R": 0.6777,
+     "F1": 0.5223,
+     "P_relaxed": 0.4715,
+     "R_relaxed": 0.7521,
+     "F1_relaxed": 0.5796,
+     "n_pred": 386,
+     "n_gold": 242,
+     "ci95": {
+      "P": [
+       0.3688,
+       0.4828
+      ],
+      "R": [
+       0.6144,
+       0.7416
+      ],
+      "F1": [
+       0.4648,
+       0.5783
+      ],
+      "F1_relaxed": [
+       0.5246,
+       0.6314
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.4545,
+     "R": 0.5,
+     "F1": 0.4762,
+     "P_relaxed": 0.4545,
+     "R_relaxed": 0.5,
+     "F1_relaxed": 0.4762,
+     "n_pred": 11,
+     "n_gold": 10,
+     "ci95": {
+      "P": [
+       0.0,
+       0.8333
+      ],
+      "R": [
+       0.0,
+       0.7143
+      ],
+      "F1": [
+       0.0,
+       0.7143
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.7143
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.3692,
+     "R": 0.434,
+     "F1": 0.399,
+     "P_relaxed": 0.5108,
+     "R_relaxed": 0.6004,
+     "F1_relaxed": 0.552,
+     "n_pred": 650,
+     "n_gold": 553,
+     "ci95": {
+      "P": [
+       0.3203,
+       0.4195
+      ],
+      "R": [
+       0.3792,
+       0.4924
+      ],
+      "F1": [
+       0.3503,
+       0.4459
+      ],
+      "F1_relaxed": [
+       0.5033,
+       0.5967
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.6,
+   "n_test": 748
+  },
+  "cyner__lower": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.2822,
+     "R": 0.2259,
+     "F1": 0.2509,
+     "P_relaxed": 0.5643,
+     "R_relaxed": 0.4518,
+     "F1_relaxed": 0.5018,
+     "n_pred": 241,
+     "n_gold": 301,
+     "ci95": {
+      "P": [
+       0.1962,
+       0.3766
+      ],
+      "R": [
+       0.155,
+       0.3085
+      ],
+      "F1": [
+       0.1756,
+       0.3345
+      ],
+      "F1_relaxed": [
+       0.4234,
+       0.5771
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.516,
+     "R": 0.6653,
+     "F1": 0.5812,
+     "P_relaxed": 0.5769,
+     "R_relaxed": 0.7438,
+     "F1_relaxed": 0.6498,
+     "n_pred": 312,
+     "n_gold": 242,
+     "ci95": {
+      "P": [
+       0.4467,
+       0.5797
+      ],
+      "R": [
+       0.6026,
+       0.7303
+      ],
+      "F1": [
+       0.5206,
+       0.6381
+      ],
+      "F1_relaxed": [
+       0.5907,
+       0.7038
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.5,
+     "R": 0.5,
+     "F1": 0.5,
+     "P_relaxed": 0.5,
+     "R_relaxed": 0.5,
+     "F1_relaxed": 0.5,
+     "n_pred": 10,
+     "n_gold": 10,
+     "ci95": {
+      "P": [
+       0.0,
+       0.8342
+      ],
+      "R": [
+       0.0,
+       0.7143
+      ],
+      "F1": [
+       0.0,
+       0.7247
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.7247
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.4156,
+     "R": 0.4231,
+     "F1": 0.4194,
+     "P_relaxed": 0.5702,
+     "R_relaxed": 0.5805,
+     "F1_relaxed": 0.5753,
+     "n_pred": 563,
+     "n_gold": 553,
+     "ci95": {
+      "P": [
+       0.3598,
+       0.4682
+      ],
+      "R": [
+       0.3683,
+       0.4821
+      ],
+      "F1": [
+       0.3697,
+       0.4683
+      ],
+      "F1_relaxed": [
+       0.5281,
+       0.622
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.1,
+   "n_test": 748
+  },
+  "cyner__typo": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.2918,
+     "R": 0.2492,
+     "F1": 0.2688,
+     "P_relaxed": 0.5642,
+     "R_relaxed": 0.4817,
+     "F1_relaxed": 0.5197,
+     "n_pred": 257,
+     "n_gold": 301,
+     "ci95": {
+      "P": [
+       0.2057,
+       0.382
+      ],
+      "R": [
+       0.1742,
+       0.3289
+      ],
+      "F1": [
+       0.1903,
+       0.3476
+      ],
+      "F1_relaxed": [
+       0.4406,
+       0.5935
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.5057,
+     "R": 0.7273,
+     "F1": 0.5966,
+     "P_relaxed": 0.5546,
+     "R_relaxed": 0.7975,
+     "F1_relaxed": 0.6542,
+     "n_pred": 348,
+     "n_gold": 242,
+     "ci95": {
+      "P": [
+       0.4444,
+       0.5684
+      ],
+      "R": [
+       0.6681,
+       0.7899
+      ],
+      "F1": [
+       0.5383,
+       0.6513
+      ],
+      "F1_relaxed": [
+       0.6,
+       0.7059
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.4167,
+     "R": 0.5,
+     "F1": 0.4545,
+     "P_relaxed": 0.4167,
+     "R_relaxed": 0.5,
+     "F1_relaxed": 0.4545,
+     "n_pred": 12,
+     "n_gold": 10,
+     "ci95": {
+      "P": [
+       0.0,
+       0.7895
+      ],
+      "R": [
+       0.0,
+       0.7143
+      ],
+      "F1": [
+       0.0,
+       0.7018
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.7018
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.4149,
+     "R": 0.4629,
+     "F1": 0.4376,
+     "P_relaxed": 0.5559,
+     "R_relaxed": 0.6203,
+     "F1_relaxed": 0.5863,
+     "n_pred": 617,
+     "n_gold": 553,
+     "ci95": {
+      "P": [
+       0.3632,
+       0.4645
+      ],
+      "R": [
+       0.4082,
+       0.5197
+      ],
+      "F1": [
+       0.3899,
+       0.4845
+      ],
+      "F1_relaxed": [
+       0.5416,
+       0.631
+      ]
+     }
+    }
+   },
+   "test_seconds": 4.1,
+   "n_test": 748
+  }
+ },
+ "wall_seconds": 74.6,
+ "peak_vram_mib": 2160
+}

@@ -1,0 +1,458 @@
+{
+ "aptner__bt-ru": {
+  "HASH": {
+   "orig_hits": 59,
+   "bt_hits": 23,
+   "bt_hits_not_in_orig": 23,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "IP": {
+   "orig_hits": 45,
+   "bt_hits": 20,
+   "bt_hits_not_in_orig": 4,
+   "corrupted_share_of_bt_hits": 0.2
+  },
+  "CVE": {
+   "orig_hits": 30,
+   "bt_hits": 7,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": 0.0
+  },
+  "EMAIL": {
+   "orig_hits": 22,
+   "bt_hits": 18,
+   "bt_hits_not_in_orig": 13,
+   "corrupted_share_of_bt_hits": 0.722
+  },
+  "URL": {
+   "orig_hits": 17,
+   "bt_hits": 17,
+   "bt_hits_not_in_orig": 15,
+   "corrupted_share_of_bt_hits": 0.882
+  },
+  "DOMAIN": {
+   "orig_hits": 56,
+   "bt_hits": 50,
+   "bt_hits_not_in_orig": 26,
+   "corrupted_share_of_bt_hits": 0.52
+  }
+ },
+ "aptner__bt-de": {
+  "HASH": {
+   "orig_hits": 59,
+   "bt_hits": 22,
+   "bt_hits_not_in_orig": 5,
+   "corrupted_share_of_bt_hits": 0.227
+  },
+  "IP": {
+   "orig_hits": 45,
+   "bt_hits": 33,
+   "bt_hits_not_in_orig": 5,
+   "corrupted_share_of_bt_hits": 0.152
+  },
+  "CVE": {
+   "orig_hits": 30,
+   "bt_hits": 31,
+   "bt_hits_not_in_orig": 1,
+   "corrupted_share_of_bt_hits": 0.032
+  },
+  "EMAIL": {
+   "orig_hits": 22,
+   "bt_hits": 18,
+   "bt_hits_not_in_orig": 8,
+   "corrupted_share_of_bt_hits": 0.444
+  },
+  "URL": {
+   "orig_hits": 17,
+   "bt_hits": 15,
+   "bt_hits_not_in_orig": 5,
+   "corrupted_share_of_bt_hits": 0.333
+  },
+  "DOMAIN": {
+   "orig_hits": 56,
+   "bt_hits": 56,
+   "bt_hits_not_in_orig": 5,
+   "corrupted_share_of_bt_hits": 0.089
+  }
+ },
+ "aptner__bt-zh": {
+  "HASH": {
+   "orig_hits": 59,
+   "bt_hits": 13,
+   "bt_hits_not_in_orig": 12,
+   "corrupted_share_of_bt_hits": 0.923
+  },
+  "IP": {
+   "orig_hits": 45,
+   "bt_hits": 16,
+   "bt_hits_not_in_orig": 5,
+   "corrupted_share_of_bt_hits": 0.312
+  },
+  "CVE": {
+   "orig_hits": 30,
+   "bt_hits": 28,
+   "bt_hits_not_in_orig": 3,
+   "corrupted_share_of_bt_hits": 0.107
+  },
+  "EMAIL": {
+   "orig_hits": 22,
+   "bt_hits": 17,
+   "bt_hits_not_in_orig": 13,
+   "corrupted_share_of_bt_hits": 0.765
+  },
+  "URL": {
+   "orig_hits": 17,
+   "bt_hits": 16,
+   "bt_hits_not_in_orig": 15,
+   "corrupted_share_of_bt_hits": 0.938
+  },
+  "DOMAIN": {
+   "orig_hits": 56,
+   "bt_hits": 38,
+   "bt_hits_not_in_orig": 24,
+   "corrupted_share_of_bt_hits": 0.632
+  }
+ },
+ "aptner__bt-es": {
+  "HASH": {
+   "orig_hits": 59,
+   "bt_hits": 26,
+   "bt_hits_not_in_orig": 7,
+   "corrupted_share_of_bt_hits": 0.269
+  },
+  "IP": {
+   "orig_hits": 45,
+   "bt_hits": 37,
+   "bt_hits_not_in_orig": 1,
+   "corrupted_share_of_bt_hits": 0.027
+  },
+  "CVE": {
+   "orig_hits": 30,
+   "bt_hits": 31,
+   "bt_hits_not_in_orig": 1,
+   "corrupted_share_of_bt_hits": 0.032
+  },
+  "EMAIL": {
+   "orig_hits": 22,
+   "bt_hits": 23,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": 0.0
+  },
+  "URL": {
+   "orig_hits": 17,
+   "bt_hits": 17,
+   "bt_hits_not_in_orig": 6,
+   "corrupted_share_of_bt_hits": 0.353
+  },
+  "DOMAIN": {
+   "orig_hits": 56,
+   "bt_hits": 59,
+   "bt_hits_not_in_orig": 4,
+   "corrupted_share_of_bt_hits": 0.068
+  }
+ },
+ "cyner__bt-ru": {
+  "HASH": {
+   "orig_hits": 24,
+   "bt_hits": 10,
+   "bt_hits_not_in_orig": 10,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "IP": {
+   "orig_hits": 8,
+   "bt_hits": 2,
+   "bt_hits_not_in_orig": 2,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "CVE": {
+   "orig_hits": 5,
+   "bt_hits": 1,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": 0.0
+  },
+  "EMAIL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "URL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "DOMAIN": {
+   "orig_hits": 9,
+   "bt_hits": 11,
+   "bt_hits_not_in_orig": 8,
+   "corrupted_share_of_bt_hits": 0.727
+  }
+ },
+ "cyner__bt-de": {
+  "HASH": {
+   "orig_hits": 24,
+   "bt_hits": 23,
+   "bt_hits_not_in_orig": 5,
+   "corrupted_share_of_bt_hits": 0.217
+  },
+  "IP": {
+   "orig_hits": 8,
+   "bt_hits": 5,
+   "bt_hits_not_in_orig": 1,
+   "corrupted_share_of_bt_hits": 0.2
+  },
+  "CVE": {
+   "orig_hits": 5,
+   "bt_hits": 5,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": 0.0
+  },
+  "EMAIL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "URL": {
+   "orig_hits": 0,
+   "bt_hits": 13,
+   "bt_hits_not_in_orig": 13,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "DOMAIN": {
+   "orig_hits": 9,
+   "bt_hits": 9,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": 0.0
+  }
+ },
+ "cyner__bt-zh": {
+  "HASH": {
+   "orig_hits": 24,
+   "bt_hits": 9,
+   "bt_hits_not_in_orig": 9,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "IP": {
+   "orig_hits": 8,
+   "bt_hits": 4,
+   "bt_hits_not_in_orig": 3,
+   "corrupted_share_of_bt_hits": 0.75
+  },
+  "CVE": {
+   "orig_hits": 5,
+   "bt_hits": 6,
+   "bt_hits_not_in_orig": 1,
+   "corrupted_share_of_bt_hits": 0.167
+  },
+  "EMAIL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "URL": {
+   "orig_hits": 0,
+   "bt_hits": 9,
+   "bt_hits_not_in_orig": 9,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "DOMAIN": {
+   "orig_hits": 9,
+   "bt_hits": 22,
+   "bt_hits_not_in_orig": 21,
+   "corrupted_share_of_bt_hits": 0.955
+  }
+ },
+ "cyner__bt-es": {
+  "HASH": {
+   "orig_hits": 24,
+   "bt_hits": 21,
+   "bt_hits_not_in_orig": 7,
+   "corrupted_share_of_bt_hits": 0.333
+  },
+  "IP": {
+   "orig_hits": 8,
+   "bt_hits": 6,
+   "bt_hits_not_in_orig": 1,
+   "corrupted_share_of_bt_hits": 0.167
+  },
+  "CVE": {
+   "orig_hits": 5,
+   "bt_hits": 5,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": 0.0
+  },
+  "EMAIL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "URL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "DOMAIN": {
+   "orig_hits": 9,
+   "bt_hits": 12,
+   "bt_hits_not_in_orig": 5,
+   "corrupted_share_of_bt_hits": 0.417
+  }
+ },
+ "annoctr__bt-ru": {
+  "HASH": {
+   "orig_hits": 117,
+   "bt_hits": 80,
+   "bt_hits_not_in_orig": 54,
+   "corrupted_share_of_bt_hits": 0.675
+  },
+  "IP": {
+   "orig_hits": 64,
+   "bt_hits": 45,
+   "bt_hits_not_in_orig": 11,
+   "corrupted_share_of_bt_hits": 0.244
+  },
+  "CVE": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "EMAIL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "URL": {
+   "orig_hits": 0,
+   "bt_hits": 65,
+   "bt_hits_not_in_orig": 65,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "DOMAIN": {
+   "orig_hits": 257,
+   "bt_hits": 233,
+   "bt_hits_not_in_orig": 144,
+   "corrupted_share_of_bt_hits": 0.618
+  }
+ },
+ "annoctr__bt-de": {
+  "HASH": {
+   "orig_hits": 117,
+   "bt_hits": 82,
+   "bt_hits_not_in_orig": 20,
+   "corrupted_share_of_bt_hits": 0.244
+  },
+  "IP": {
+   "orig_hits": 64,
+   "bt_hits": 59,
+   "bt_hits_not_in_orig": 1,
+   "corrupted_share_of_bt_hits": 0.017
+  },
+  "CVE": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "EMAIL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "URL": {
+   "orig_hits": 0,
+   "bt_hits": 2,
+   "bt_hits_not_in_orig": 2,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "DOMAIN": {
+   "orig_hits": 257,
+   "bt_hits": 231,
+   "bt_hits_not_in_orig": 41,
+   "corrupted_share_of_bt_hits": 0.177
+  }
+ },
+ "annoctr__bt-zh": {
+  "HASH": {
+   "orig_hits": 117,
+   "bt_hits": 48,
+   "bt_hits_not_in_orig": 34,
+   "corrupted_share_of_bt_hits": 0.708
+  },
+  "IP": {
+   "orig_hits": 64,
+   "bt_hits": 26,
+   "bt_hits_not_in_orig": 5,
+   "corrupted_share_of_bt_hits": 0.192
+  },
+  "CVE": {
+   "orig_hits": 0,
+   "bt_hits": 1,
+   "bt_hits_not_in_orig": 1,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "EMAIL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "URL": {
+   "orig_hits": 0,
+   "bt_hits": 318,
+   "bt_hits_not_in_orig": 318,
+   "corrupted_share_of_bt_hits": 1.0
+  },
+  "DOMAIN": {
+   "orig_hits": 257,
+   "bt_hits": 322,
+   "bt_hits_not_in_orig": 238,
+   "corrupted_share_of_bt_hits": 0.739
+  }
+ },
+ "annoctr__bt-es": {
+  "HASH": {
+   "orig_hits": 117,
+   "bt_hits": 103,
+   "bt_hits_not_in_orig": 18,
+   "corrupted_share_of_bt_hits": 0.175
+  },
+  "IP": {
+   "orig_hits": 64,
+   "bt_hits": 187,
+   "bt_hits_not_in_orig": 130,
+   "corrupted_share_of_bt_hits": 0.695
+  },
+  "CVE": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "EMAIL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "URL": {
+   "orig_hits": 0,
+   "bt_hits": 0,
+   "bt_hits_not_in_orig": 0,
+   "corrupted_share_of_bt_hits": null
+  },
+  "DOMAIN": {
+   "orig_hits": 257,
+   "bt_hits": 260,
+   "bt_hits_not_in_orig": 30,
+   "corrupted_share_of_bt_hits": 0.115
+  }
+ }
+}

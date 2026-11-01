@@ -1,0 +1,1062 @@
+{
+ "model": "urchade/gliner_large-v2.1",
+ "labels": {
+  "threat actor or APT group": "THREAT_ACTOR",
+  "malware family or malicious software": "MALWARE",
+  "software tool or utility": "TOOL",
+  "vulnerability or CVE identifier": "VULNERABILITY",
+  "IP address": "IP",
+  "file hash": "HASH",
+  "domain name": "DOMAIN",
+  "URL": "URL",
+  "email address": "EMAIL",
+  "file name or file path": "FILE",
+  "location or country": "LOCATION"
+ },
+ "eval": {
+  "aptner": {
+   "labels_used": [
+    "threat actor or APT group",
+    "malware family or malicious software",
+    "software tool or utility",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path",
+    "location or country"
+   ],
+   "threshold": 0.6,
+   "dev_f1_at_threshold": 0.3433,
+   "metrics": {
+    "DOMAIN": {
+     "P": 0.3333,
+     "R": 0.7727,
+     "F1": 0.4658,
+     "P_relaxed": 0.3333,
+     "R_relaxed": 0.7727,
+     "F1_relaxed": 0.4658,
+     "n_pred": 102,
+     "n_gold": 44,
+     "ci95": {
+      "P": [
+       0.2128,
+       0.4595
+      ],
+      "R": [
+       0.64,
+       0.8958
+      ],
+      "F1": [
+       0.328,
+       0.586
+      ],
+      "F1_relaxed": [
+       0.328,
+       0.586
+      ]
+     }
+    },
+    "EMAIL": {
+     "P": 0.4737,
+     "R": 0.7826,
+     "F1": 0.5902,
+     "P_relaxed": 0.4737,
+     "R_relaxed": 0.7826,
+     "F1_relaxed": 0.5902,
+     "n_pred": 38,
+     "n_gold": 23,
+     "ci95": {
+      "P": [
+       0.2962,
+       0.6552
+      ],
+      "R": [
+       0.5833,
+       1.0
+      ],
+      "F1": [
+       0.4231,
+       0.7334
+      ],
+      "F1_relaxed": [
+       0.4231,
+       0.7334
+      ]
+     }
+    },
+    "FILE": {
+     "P": 0.5426,
+     "R": 0.5312,
+     "F1": 0.5368,
+     "P_relaxed": 0.5851,
+     "R_relaxed": 0.5729,
+     "F1_relaxed": 0.5789,
+     "n_pred": 94,
+     "n_gold": 96,
+     "ci95": {
+      "P": [
+       0.4242,
+       0.6586
+      ],
+      "R": [
+       0.4018,
+       0.6531
+      ],
+      "F1": [
+       0.4183,
+       0.6378
+      ],
+      "F1_relaxed": [
+       0.4607,
+       0.6762
+      ]
+     }
+    },
+    "HASH": {
+     "P": 0.2239,
+     "R": 0.2542,
+     "F1": 0.2381,
+     "P_relaxed": 0.2239,
+     "R_relaxed": 0.2542,
+     "F1_relaxed": 0.2381,
+     "n_pred": 67,
+     "n_gold": 59,
+     "ci95": {
+      "P": [
+       0.1132,
+       0.3696
+      ],
+      "R": [
+       0.1111,
+       0.6178
+      ],
+      "F1": [
+       0.1159,
+       0.4368
+      ],
+      "F1_relaxed": [
+       0.1159,
+       0.4368
+      ]
+     }
+    },
+    "IP": {
+     "P": 0.4857,
+     "R": 0.9714,
+     "F1": 0.6476,
+     "P_relaxed": 0.5,
+     "R_relaxed": 1.0,
+     "F1_relaxed": 0.6667,
+     "n_pred": 70,
+     "n_gold": 35,
+     "ci95": {
+      "P": [
+       0.3288,
+       0.6324
+      ],
+      "R": [
+       0.9048,
+       1.0
+      ],
+      "F1": [
+       0.486,
+       0.7715
+      ],
+      "F1_relaxed": [
+       0.5128,
+       0.7786
+      ]
+     }
+    },
+    "LOCATION": {
+     "P": 0.6634,
+     "R": 0.8193,
+     "F1": 0.7332,
+     "P_relaxed": 0.6976,
+     "R_relaxed": 0.8614,
+     "F1_relaxed": 0.7709,
+     "n_pred": 205,
+     "n_gold": 166,
+     "ci95": {
+      "P": [
+       0.5838,
+       0.7343
+      ],
+      "R": [
+       0.7568,
+       0.8743
+      ],
+      "F1": [
+       0.6644,
+       0.7875
+      ],
+      "F1_relaxed": [
+       0.7095,
+       0.821
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.6749,
+     "R": 0.5535,
+     "F1": 0.6082,
+     "P_relaxed": 0.7393,
+     "R_relaxed": 0.6062,
+     "F1_relaxed": 0.6662,
+     "n_pred": 606,
+     "n_gold": 739,
+     "ci95": {
+      "P": [
+       0.6314,
+       0.7163
+      ],
+      "R": [
+       0.5007,
+       0.6055
+      ],
+      "F1": [
+       0.5624,
+       0.6504
+      ],
+      "F1_relaxed": [
+       0.6266,
+       0.7054
+      ]
+     }
+    },
+    "THREAT_ACTOR": {
+     "P": 0.361,
+     "R": 0.5,
+     "F1": 0.4193,
+     "P_relaxed": 0.4849,
+     "R_relaxed": 0.6715,
+     "F1_relaxed": 0.5632,
+     "n_pred": 662,
+     "n_gold": 478,
+     "ci95": {
+      "P": [
+       0.3207,
+       0.4021
+      ],
+      "R": [
+       0.4551,
+       0.5464
+      ],
+      "F1": [
+       0.3797,
+       0.4606
+      ],
+      "F1_relaxed": [
+       0.5258,
+       0.6013
+      ]
+     }
+    },
+    "TOOL": {
+     "P": 0.2432,
+     "R": 0.1236,
+     "F1": 0.1639,
+     "P_relaxed": 0.3333,
+     "R_relaxed": 0.1693,
+     "F1_relaxed": 0.2246,
+     "n_pred": 444,
+     "n_gold": 874,
+     "ci95": {
+      "P": [
+       0.1992,
+       0.291
+      ],
+      "R": [
+       0.0991,
+       0.1491
+      ],
+      "F1": [
+       0.133,
+       0.1959
+      ],
+      "F1_relaxed": [
+       0.1902,
+       0.2588
+      ]
+     }
+    },
+    "URL": {
+     "P": 0.0182,
+     "R": 0.125,
+     "F1": 0.0317,
+     "P_relaxed": 0.0182,
+     "R_relaxed": 0.125,
+     "F1_relaxed": 0.0317,
+     "n_pred": 55,
+     "n_gold": 8,
+     "ci95": {
+      "P": [
+       0.0,
+       0.0612
+      ],
+      "R": [
+       0.0,
+       0.5
+      ],
+      "F1": [
+       0.0,
+       0.1053
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.1053
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.3656,
+     "R": 0.68,
+     "F1": 0.4755,
+     "P_relaxed": 0.3763,
+     "R_relaxed": 0.7,
+     "F1_relaxed": 0.4895,
+     "n_pred": 93,
+     "n_gold": 50,
+     "ci95": {
+      "P": [
+       0.2604,
+       0.4783
+      ],
+      "R": [
+       0.5417,
+       0.807
+      ],
+      "F1": [
+       0.3622,
+       0.5828
+      ],
+      "F1_relaxed": [
+       0.3759,
+       0.593
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.4429,
+     "R": 0.4195,
+     "F1": 0.4309,
+     "P_relaxed": 0.5144,
+     "R_relaxed": 0.4872,
+     "F1_relaxed": 0.5004,
+     "n_pred": 2436,
+     "n_gold": 2572,
+     "ci95": {
+      "P": [
+       0.419,
+       0.4679
+      ],
+      "R": [
+       0.3945,
+       0.4464
+      ],
+      "F1": [
+       0.4081,
+       0.457
+      ],
+      "F1_relaxed": [
+       0.4786,
+       0.5251
+      ]
+     }
+    }
+   },
+   "test_seconds": 15.4,
+   "n_test": 1545
+  },
+  "dnrti": {
+   "labels_used": [
+    "threat actor or APT group",
+    "malware family or malicious software",
+    "software tool or utility",
+    "vulnerability or CVE identifier",
+    "file name or file path",
+    "location or country"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.4562,
+   "metrics": {
+    "FILE": {
+     "P": 0.4853,
+     "R": 0.1331,
+     "F1": 0.2089,
+     "P_relaxed": 0.6176,
+     "R_relaxed": 0.1694,
+     "F1_relaxed": 0.2658,
+     "n_pred": 68,
+     "n_gold": 248,
+     "ci95": {
+      "P": [
+       0.3471,
+       0.625
+      ],
+      "R": [
+       0.0856,
+       0.1859
+      ],
+      "F1": [
+       0.1359,
+       0.2813
+      ],
+      "F1_relaxed": [
+       0.1899,
+       0.3394
+      ]
+     }
+    },
+    "LOCATION": {
+     "P": 0.7186,
+     "R": 0.662,
+     "F1": 0.6892,
+     "P_relaxed": 0.799,
+     "R_relaxed": 0.7361,
+     "F1_relaxed": 0.7663,
+     "n_pred": 199,
+     "n_gold": 216,
+     "ci95": {
+      "P": [
+       0.6139,
+       0.8009
+      ],
+      "R": [
+       0.5545,
+       0.7526
+      ],
+      "F1": [
+       0.5912,
+       0.7692
+      ],
+      "F1_relaxed": [
+       0.6809,
+       0.8282
+      ]
+     }
+    },
+    "MALWARE_TOOL": {
+     "P": 0.4133,
+     "R": 0.454,
+     "F1": 0.4327,
+     "P_relaxed": 0.4942,
+     "R_relaxed": 0.5429,
+     "F1_relaxed": 0.5174,
+     "n_pred": 346,
+     "n_gold": 315,
+     "ci95": {
+      "P": [
+       0.3535,
+       0.472
+      ],
+      "R": [
+       0.3956,
+       0.5184
+      ],
+      "F1": [
+       0.38,
+       0.4864
+      ],
+      "F1_relaxed": [
+       0.4608,
+       0.5703
+      ]
+     }
+    },
+    "THREAT_ACTOR": {
+     "P": 0.5039,
+     "R": 0.5257,
+     "F1": 0.5146,
+     "P_relaxed": 0.6753,
+     "R_relaxed": 0.7046,
+     "F1_relaxed": 0.6897,
+     "n_pred": 385,
+     "n_gold": 369,
+     "ci95": {
+      "P": [
+       0.4525,
+       0.555
+      ],
+      "R": [
+       0.4785,
+       0.577
+      ],
+      "F1": [
+       0.4687,
+       0.5612
+      ],
+      "F1_relaxed": [
+       0.6534,
+       0.7261
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.9419,
+     "R": 0.6136,
+     "F1": 0.7431,
+     "P_relaxed": 0.9651,
+     "R_relaxed": 0.6288,
+     "F1_relaxed": 0.7615,
+     "n_pred": 86,
+     "n_gold": 132,
+     "ci95": {
+      "P": [
+       0.8889,
+       0.9865
+      ],
+      "R": [
+       0.5303,
+       0.7027
+      ],
+      "F1": [
+       0.6703,
+       0.8108
+      ],
+      "F1_relaxed": [
+       0.6927,
+       0.8226
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.548,
+     "R": 0.4641,
+     "F1": 0.5025,
+     "P_relaxed": 0.6596,
+     "R_relaxed": 0.5586,
+     "F1_relaxed": 0.6049,
+     "n_pred": 1084,
+     "n_gold": 1280,
+     "ci95": {
+      "P": [
+       0.5116,
+       0.5833
+      ],
+      "R": [
+       0.4293,
+       0.4989
+      ],
+      "F1": [
+       0.4687,
+       0.5352
+      ],
+      "F1_relaxed": [
+       0.5747,
+       0.6358
+      ]
+     }
+    }
+   },
+   "test_seconds": 6.5,
+   "n_test": 664
+  },
+  "cyner": {
+   "labels_used": [
+    "malware family or malicious software",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.5214,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.2846,
+     "R": 0.2326,
+     "F1": 0.2559,
+     "P_relaxed": 0.5691,
+     "R_relaxed": 0.4651,
+     "F1_relaxed": 0.5119,
+     "n_pred": 246,
+     "n_gold": 301,
+     "ci95": {
+      "P": [
+       0.2033,
+       0.3737
+      ],
+      "R": [
+       0.166,
+       0.3053
+      ],
+      "F1": [
+       0.1832,
+       0.3305
+      ],
+      "F1_relaxed": [
+       0.4355,
+       0.5829
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.5163,
+     "R": 0.719,
+     "F1": 0.601,
+     "P_relaxed": 0.5697,
+     "R_relaxed": 0.7934,
+     "F1_relaxed": 0.6632,
+     "n_pred": 337,
+     "n_gold": 242,
+     "ci95": {
+      "P": [
+       0.4548,
+       0.5785
+      ],
+      "R": [
+       0.6556,
+       0.7782
+      ],
+      "F1": [
+       0.5434,
+       0.6548
+      ],
+      "F1_relaxed": [
+       0.6071,
+       0.7138
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.4545,
+     "R": 0.5,
+     "F1": 0.4762,
+     "P_relaxed": 0.4545,
+     "R_relaxed": 0.5,
+     "F1_relaxed": 0.4762,
+     "n_pred": 11,
+     "n_gold": 10,
+     "ci95": {
+      "P": [
+       0.0,
+       0.8333
+      ],
+      "R": [
+       0.0,
+       0.7143
+      ],
+      "F1": [
+       0.0,
+       0.7143
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.7143
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.4192,
+     "R": 0.4503,
+     "F1": 0.4342,
+     "P_relaxed": 0.5673,
+     "R_relaxed": 0.6094,
+     "F1_relaxed": 0.5876,
+     "n_pred": 594,
+     "n_gold": 553,
+     "ci95": {
+      "P": [
+       0.3689,
+       0.47
+      ],
+      "R": [
+       0.395,
+       0.5078
+      ],
+      "F1": [
+       0.387,
+       0.4799
+      ],
+      "F1_relaxed": [
+       0.5408,
+       0.6312
+      ]
+     }
+    }
+   },
+   "test_seconds": 7.3,
+   "n_test": 748
+  },
+  "annoctr": {
+   "labels_used": [
+    "threat actor or APT group",
+    "malware family or malicious software",
+    "software tool or utility",
+    "location or country"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.4982,
+   "metrics": {
+    "LOCATION": {
+     "P": 0.4147,
+     "R": 0.5661,
+     "F1": 0.4787,
+     "P_relaxed": 0.4535,
+     "R_relaxed": 0.619,
+     "F1_relaxed": 0.5235,
+     "n_pred": 258,
+     "n_gold": 189,
+     "ci95": {
+      "P": [
+       0.3441,
+       0.4822
+      ],
+      "R": [
+       0.4845,
+       0.6406
+      ],
+      "F1": [
+       0.4075,
+       0.5425
+      ],
+      "F1_relaxed": [
+       0.4556,
+       0.5849
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.4906,
+     "R": 0.5582,
+     "F1": 0.5222,
+     "P_relaxed": 0.5365,
+     "R_relaxed": 0.6105,
+     "F1_relaxed": 0.5711,
+     "n_pred": 479,
+     "n_gold": 421,
+     "ci95": {
+      "P": [
+       0.4435,
+       0.5427
+      ],
+      "R": [
+       0.5061,
+       0.6136
+      ],
+      "F1": [
+       0.4784,
+       0.5673
+      ],
+      "F1_relaxed": [
+       0.5301,
+       0.6125
+      ]
+     }
+    },
+    "THREAT_ACTOR": {
+     "P": 0.2286,
+     "R": 0.5023,
+     "F1": 0.3142,
+     "P_relaxed": 0.2991,
+     "R_relaxed": 0.6573,
+     "F1_relaxed": 0.4112,
+     "n_pred": 468,
+     "n_gold": 213,
+     "ci95": {
+      "P": [
+       0.1892,
+       0.2705
+      ],
+      "R": [
+       0.4274,
+       0.5847
+      ],
+      "F1": [
+       0.2646,
+       0.3636
+      ],
+      "F1_relaxed": [
+       0.3588,
+       0.4644
+      ]
+     }
+    },
+    "TOOL": {
+     "P": 0.0664,
+     "R": 0.5577,
+     "F1": 0.1186,
+     "P_relaxed": 0.0847,
+     "R_relaxed": 0.7115,
+     "F1_relaxed": 0.1513,
+     "n_pred": 437,
+     "n_gold": 52,
+     "ci95": {
+      "P": [
+       0.0398,
+       0.0928
+      ],
+      "R": [
+       0.3829,
+       0.7112
+      ],
+      "F1": [
+       0.0726,
+       0.1635
+      ],
+      "F1_relaxed": [
+       0.099,
+       0.2039
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.2911,
+     "R": 0.5463,
+     "F1": 0.3798,
+     "P_relaxed": 0.3356,
+     "R_relaxed": 0.6297,
+     "F1_relaxed": 0.4378,
+     "n_pred": 1642,
+     "n_gold": 875,
+     "ci95": {
+      "P": [
+       0.2666,
+       0.3154
+      ],
+      "R": [
+       0.5101,
+       0.5834
+      ],
+      "F1": [
+       0.3517,
+       0.4074
+      ],
+      "F1_relaxed": [
+       0.4096,
+       0.4672
+      ]
+     }
+    }
+   },
+   "test_seconds": 29.2,
+   "n_test": 3059
+  },
+  "attacker": {
+   "labels_used": [
+    "threat actor or APT group",
+    "malware family or malicious software",
+    "software tool or utility",
+    "vulnerability or CVE identifier",
+    "IP address",
+    "file hash",
+    "domain name",
+    "URL",
+    "email address",
+    "file name or file path",
+    "location or country"
+   ],
+   "threshold": 0.7,
+   "dev_f1_at_threshold": 0.4146,
+   "metrics": {
+    "INDICATOR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "P_relaxed": 0.0,
+     "R_relaxed": 0.0,
+     "F1_relaxed": 0.0,
+     "n_pred": 17,
+     "n_gold": 6,
+     "ci95": {
+      "P": [
+       0.0,
+       0.0
+      ],
+      "R": [
+       0.0,
+       0.0
+      ],
+      "F1": [
+       0.0,
+       0.0
+      ],
+      "F1_relaxed": [
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "LOCATION": {
+     "P": 0.2222,
+     "R": 0.6667,
+     "F1": 0.3333,
+     "P_relaxed": 0.2222,
+     "R_relaxed": 0.6667,
+     "F1_relaxed": 0.3333,
+     "n_pred": 27,
+     "n_gold": 9,
+     "ci95": {
+      "P": [
+       0.037,
+       0.4287
+      ],
+      "R": [
+       0.25,
+       1.0
+      ],
+      "F1": [
+       0.0667,
+       0.5418
+      ],
+      "F1_relaxed": [
+       0.0667,
+       0.5418
+      ]
+     }
+    },
+    "MALWARE": {
+     "P": 0.449,
+     "R": 0.6667,
+     "F1": 0.5366,
+     "P_relaxed": 0.4898,
+     "R_relaxed": 0.7273,
+     "F1_relaxed": 0.5854,
+     "n_pred": 49,
+     "n_gold": 33,
+     "ci95": {
+      "P": [
+       0.2059,
+       0.6471
+      ],
+      "R": [
+       0.3793,
+       0.8538
+      ],
+      "F1": [
+       0.2745,
+       0.7176
+      ],
+      "F1_relaxed": [
+       0.3396,
+       0.7569
+      ]
+     }
+    },
+    "THREAT_ACTOR": {
+     "P": 0.4667,
+     "R": 0.3684,
+     "F1": 0.4118,
+     "P_relaxed": 0.5556,
+     "R_relaxed": 0.4386,
+     "F1_relaxed": 0.4902,
+     "n_pred": 45,
+     "n_gold": 57,
+     "ci95": {
+      "P": [
+       0.3394,
+       0.6136
+      ],
+      "R": [
+       0.2679,
+       0.4727
+      ],
+      "F1": [
+       0.3077,
+       0.5138
+      ],
+      "F1_relaxed": [
+       0.386,
+       0.5872
+      ]
+     }
+    },
+    "TOOL": {
+     "P": 0.3077,
+     "R": 0.2424,
+     "F1": 0.2712,
+     "P_relaxed": 0.4231,
+     "R_relaxed": 0.3333,
+     "F1_relaxed": 0.3729,
+     "n_pred": 26,
+     "n_gold": 33,
+     "ci95": {
+      "P": [
+       0.1111,
+       0.5238
+      ],
+      "R": [
+       0.0909,
+       0.4062
+      ],
+      "F1": [
+       0.1033,
+       0.4314
+      ],
+      "F1_relaxed": [
+       0.2034,
+       0.5294
+      ]
+     }
+    },
+    "VULNERABILITY": {
+     "P": 0.7143,
+     "R": 0.4545,
+     "F1": 0.5556,
+     "P_relaxed": 0.7143,
+     "R_relaxed": 0.4545,
+     "F1_relaxed": 0.5556,
+     "n_pred": 7,
+     "n_gold": 11,
+     "ci95": {
+      "P": [
+       0.25,
+       1.0
+      ],
+      "R": [
+       0.125,
+       0.8
+      ],
+      "F1": [
+       0.1667,
+       0.8235
+      ],
+      "F1_relaxed": [
+       0.1667,
+       0.8235
+      ]
+     }
+    },
+    "MICRO": {
+     "P": 0.3626,
+     "R": 0.4161,
+     "F1": 0.3875,
+     "P_relaxed": 0.4152,
+     "R_relaxed": 0.4765,
+     "F1_relaxed": 0.4438,
+     "n_pred": 171,
+     "n_gold": 149,
+     "ci95": {
+      "P": [
+       0.262,
+       0.4722
+      ],
+      "R": [
+       0.3172,
+       0.5168
+      ],
+      "F1": [
+       0.2934,
+       0.4872
+      ],
+      "F1_relaxed": [
+       0.358,
+       0.5337
+      ]
+     }
+    }
+   },
+   "test_seconds": 1.3,
+   "n_test": 131
+  }
+ },
+ "wall_seconds": 102.1,
+ "peak_vram_mib": 9326
+}

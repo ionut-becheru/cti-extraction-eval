@@ -1,0 +1,42 @@
+{
+ "IOC{i}": {
+  "placeholders": 721,
+  "recovered": 443,
+  "pct": 61.4
+ },
+ "XQZ{i}": {
+  "placeholders": 721,
+  "recovered": 656,
+  "pct": 91.0
+ },
+ "bracket[IOC{i}]": {
+  "placeholders": 721,
+  "recovered": 219,
+  "pct": 30.4
+ },
+ "angle<ioc{i}>": {
+  "placeholders": 721,
+  "recovered": 616,
+  "pct": 85.4
+ },
+ "hex-like": {
+  "placeholders": 721,
+  "recovered": 352,
+  "pct": 48.8
+ },
+ "digits{i}": {
+  "placeholders": 721,
+  "recovered": 275,
+  "pct": 38.1
+ },
+ "word ZORKA{i}": {
+  "placeholders": 721,
+  "recovered": 625,
+  "pct": 86.7
+ },
+ "placeholder_{i}": {
+  "placeholders": 721,
+  "recovered": 486,
+  "pct": 67.4
+ }
+}

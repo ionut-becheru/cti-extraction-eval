@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-08T00:09:34Z","end_utc":"2026-09-08T00:11:46Z","wall_seconds":132,"exit_code":0,
+ "peak_gpu_mem_mib":11632,"mean_gpu_util_pct":35.6,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/zeroshot_span_ner.py --model urchade/gliner_large-v2.1 --datasets aptner,dnrti,cyner,annoctr,attacker --out runs/E3_zs/gliner_large --bs 2"}

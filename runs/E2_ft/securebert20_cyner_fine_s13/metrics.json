@@ -1,0 +1,224 @@
+{
+ "model": "cisco-ai/SecureBERT2.0-base",
+ "dataset": "cyner",
+ "schema": "fine",
+ "seed": 13,
+ "labels": [
+  "O",
+  "B-Indicator",
+  "B-Malware",
+  "B-Organization",
+  "B-System",
+  "B-Vulnerability",
+  "I-Indicator",
+  "I-Malware",
+  "I-Organization",
+  "I-System",
+  "I-Vulnerability"
+ ],
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 0.40021933934820647,
+   "dev_micro_f1": 0.62
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.05727693521079014,
+   "dev_micro_f1": 0.7038
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.023362012578714217,
+   "dev_micro_f1": 0.7273
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.008680807302880567,
+   "dev_micro_f1": 0.7106
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.004035227599656951,
+   "dev_micro_f1": 0.7315
+  }
+ ],
+ "best_dev_micro_f1": 0.7315,
+ "eval": {
+  "cyner": {
+   "Indicator": {
+    "P": 0.784,
+    "R": 0.7475,
+    "F1": 0.7653,
+    "P_relaxed": 0.9443,
+    "R_relaxed": 0.9003,
+    "F1_relaxed": 0.9218,
+    "n_pred": 287,
+    "n_gold": 301,
+    "ci95": {
+     "P": [
+      0.7143,
+      0.8534
+     ],
+     "R": [
+      0.6842,
+      0.8056
+     ],
+     "F1": [
+      0.7069,
+      0.8187
+     ],
+     "F1_relaxed": [
+      0.8788,
+      0.9613
+     ]
+    }
+   },
+   "Malware": {
+    "P": 0.7613,
+    "R": 0.6983,
+    "F1": 0.7284,
+    "P_relaxed": 0.7883,
+    "R_relaxed": 0.7231,
+    "F1_relaxed": 0.7543,
+    "n_pred": 222,
+    "n_gold": 242,
+    "ci95": {
+     "P": [
+      0.7004,
+      0.8214
+     ],
+     "R": [
+      0.6337,
+      0.7603
+     ],
+     "F1": [
+      0.6774,
+      0.7783
+     ],
+     "F1_relaxed": [
+      0.7044,
+      0.8015
+     ]
+    }
+   },
+   "Organization": {
+    "P": 0.6421,
+    "R": 0.4552,
+    "F1": 0.5328,
+    "P_relaxed": 0.8105,
+    "R_relaxed": 0.5746,
+    "F1_relaxed": 0.6725,
+    "n_pred": 95,
+    "n_gold": 134,
+    "ci95": {
+     "P": [
+      0.5422,
+      0.753
+     ],
+     "R": [
+      0.3611,
+      0.5433
+     ],
+     "F1": [
+      0.4433,
+      0.6154
+     ],
+     "F1_relaxed": [
+      0.5845,
+      0.7544
+     ]
+    }
+   },
+   "System": {
+    "P": 0.5058,
+    "R": 0.5221,
+    "F1": 0.5138,
+    "P_relaxed": 0.6848,
+    "R_relaxed": 0.7068,
+    "F1_relaxed": 0.6957,
+    "n_pred": 257,
+    "n_gold": 249,
+    "ci95": {
+     "P": [
+      0.4402,
+      0.5708
+     ],
+     "R": [
+      0.4593,
+      0.5966
+     ],
+     "F1": [
+      0.4552,
+      0.5758
+     ],
+     "F1_relaxed": [
+      0.633,
+      0.7528
+     ]
+    }
+   },
+   "Vulnerability": {
+    "P": 0.8,
+    "R": 0.4,
+    "F1": 0.5333,
+    "P_relaxed": 1.0,
+    "R_relaxed": 0.5,
+    "F1_relaxed": 0.6667,
+    "n_pred": 5,
+    "n_gold": 10,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.5714
+     ],
+     "F1": [
+      0.0,
+      0.7273
+     ],
+     "F1_relaxed": [
+      0.0,
+      1.0
+     ]
+    }
+   },
+   "MICRO": {
+    "P": 0.6801,
+    "R": 0.6293,
+    "F1": 0.6537,
+    "P_relaxed": 0.8129,
+    "R_relaxed": 0.7521,
+    "F1_relaxed": 0.7814,
+    "n_pred": 866,
+    "n_gold": 936,
+    "ci95": {
+     "P": [
+      0.6429,
+      0.7168
+     ],
+     "R": [
+      0.593,
+      0.6639
+     ],
+     "F1": [
+      0.6197,
+      0.6871
+     ],
+     "F1_relaxed": [
+      0.7516,
+      0.8094
+     ]
+    }
+   }
+  }
+ },
+ "wall_seconds": 43.5,
+ "peak_vram_mib": 4429,
+ "n_train": 2811,
+ "n_dev": 813,
+ "n_test": 748
+}

@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-07T22:22:27Z","end_utc":"2026-09-07T22:24:48Z","wall_seconds":141,"exit_code":0,
+ "peak_gpu_mem_mib":7754,"mean_gpu_util_pct":55.0,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/zeroshot_span_ner.py --model urchade/gliner_large-v2.1 --datasets aptner,aptner__bt-ru,aptner__bt-de,aptner__bt-zh,aptner__bt-es,aptner__defang,aptner__boiler,aptner__lower,aptner__typo --out runs/E5_noise/gliner_aptner"}

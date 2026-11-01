@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-07T20:49:49Z","end_utc":"2026-09-07T20:50:44Z","wall_seconds":55,"exit_code":0,
+ "peak_gpu_mem_mib":9114,"mean_gpu_util_pct":70.1,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/finetune_ner.py --model microsoft/deberta-v3-base --dataset cyner --schema fine --seed 13 --out runs/E2_ft/deberta-v3_cyner_fine_s13 --eval-on cyner --epochs 5"}

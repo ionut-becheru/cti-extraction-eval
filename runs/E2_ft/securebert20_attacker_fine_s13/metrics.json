@@ -1,0 +1,614 @@
+{
+ "model": "cisco-ai/SecureBERT2.0-base",
+ "dataset": "attacker",
+ "schema": "fine",
+ "seed": 13,
+ "labels": [
+  "O",
+  "B-ATTACK_MOTIVATION",
+  "B-ATTACK_PATTERN",
+  "B-ATTACK_TOOL",
+  "B-CAMPAIGN",
+  "B-COURSE_OF_ACTION",
+  "B-GENERAL_IDENTITY",
+  "B-GENERAL_TOOL",
+  "B-IMPACT",
+  "B-INDICATOR",
+  "B-INFRASTRUCTURE",
+  "B-INTRUSION_SET",
+  "B-LOCATION",
+  "B-MALWARE",
+  "B-MALWARE_ANALYSIS",
+  "B-OBSERVED_DATA",
+  "B-THREAT_ACTOR",
+  "B-VICTIM_IDENTITY",
+  "B-VULNERABILITY",
+  "I-ATTACK_MOTIVATION",
+  "I-ATTACK_PATTERN",
+  "I-ATTACK_TOOL",
+  "I-CAMPAIGN",
+  "I-COURSE_OF_ACTION",
+  "I-GENERAL_IDENTITY",
+  "I-GENERAL_TOOL",
+  "I-IMPACT",
+  "I-INDICATOR",
+  "I-INFRASTRUCTURE",
+  "I-INTRUSION_SET",
+  "I-LOCATION",
+  "I-MALWARE",
+  "I-MALWARE_ANALYSIS",
+  "I-OBSERVED_DATA",
+  "I-THREAT_ACTOR",
+  "I-VICTIM_IDENTITY",
+  "I-VULNERABILITY"
+ ],
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 1.97111843029658,
+   "dev_micro_f1": 0.1134
+  },
+  {
+   "epoch": 2,
+   "train_loss": 1.08394489188989,
+   "dev_micro_f1": 0.2425
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.637533670816666,
+   "dev_micro_f1": 0.2996
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.40426225000276017,
+   "dev_micro_f1": 0.3104
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.2758034557486192,
+   "dev_micro_f1": 0.3524
+  }
+ ],
+ "best_dev_micro_f1": 0.3524,
+ "eval": {
+  "attacker": {
+   "ATTACK_MOTIVATION": {
+    "P": 0.2667,
+    "R": 0.2353,
+    "F1": 0.25,
+    "P_relaxed": 0.4,
+    "R_relaxed": 0.3529,
+    "F1_relaxed": 0.375,
+    "n_pred": 15,
+    "n_gold": 17,
+    "ci95": {
+     "P": [
+      0.0,
+      0.5294
+     ],
+     "R": [
+      0.0,
+      0.482
+     ],
+     "F1": [
+      0.0,
+      0.4866
+     ],
+     "F1_relaxed": [
+      0.0625,
+      0.5625
+     ]
+    }
+   },
+   "ATTACK_PATTERN": {
+    "P": 0.2105,
+    "R": 0.3871,
+    "F1": 0.2727,
+    "P_relaxed": 0.5614,
+    "R_relaxed": 1.0323,
+    "F1_relaxed": 0.7273,
+    "n_pred": 57,
+    "n_gold": 31,
+    "ci95": {
+     "P": [
+      0.0895,
+      0.3335
+     ],
+     "R": [
+      0.186,
+      0.5581
+     ],
+     "F1": [
+      0.1194,
+      0.4146
+     ],
+     "F1_relaxed": [
+      0.5192,
+      0.96
+     ]
+    }
+   },
+   "ATTACK_TOOL": {
+    "P": 0.3571,
+    "R": 0.2778,
+    "F1": 0.3125,
+    "P_relaxed": 0.5714,
+    "R_relaxed": 0.4444,
+    "F1_relaxed": 0.5,
+    "n_pred": 14,
+    "n_gold": 18,
+    "ci95": {
+     "P": [
+      0.0768,
+      0.65
+     ],
+     "R": [
+      0.0556,
+      0.5625
+     ],
+     "F1": [
+      0.0714,
+      0.5833
+     ],
+     "F1_relaxed": [
+      0.2067,
+      0.7368
+     ]
+    }
+   },
+   "CAMPAIGN": {
+    "P": 0.0833,
+    "R": 0.25,
+    "F1": 0.125,
+    "P_relaxed": 0.0833,
+    "R_relaxed": 0.25,
+    "F1_relaxed": 0.125,
+    "n_pred": 12,
+    "n_gold": 4,
+    "ci95": {
+     "P": [
+      0.0,
+      0.25
+     ],
+     "R": [
+      0.0,
+      0.75
+     ],
+     "F1": [
+      0.0,
+      0.3333
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.3333
+     ]
+    }
+   },
+   "COURSE_OF_ACTION": {
+    "P": 0.1389,
+    "R": 0.2273,
+    "F1": 0.1724,
+    "P_relaxed": 0.5278,
+    "R_relaxed": 0.8636,
+    "F1_relaxed": 0.6552,
+    "n_pred": 36,
+    "n_gold": 22,
+    "ci95": {
+     "P": [
+      0.025,
+      0.3336
+     ],
+     "R": [
+      0.0476,
+      0.4584
+     ],
+     "F1": [
+      0.0317,
+      0.3825
+     ],
+     "F1_relaxed": [
+      0.4262,
+      0.8801
+     ]
+    }
+   },
+   "GENERAL_IDENTITY": {
+    "P": 0.7037,
+    "R": 0.5938,
+    "F1": 0.6441,
+    "P_relaxed": 0.9444,
+    "R_relaxed": 0.7969,
+    "F1_relaxed": 0.8644,
+    "n_pred": 54,
+    "n_gold": 64,
+    "ci95": {
+     "P": [
+      0.5814,
+      0.8303
+     ],
+     "R": [
+      0.4462,
+      0.7369
+     ],
+     "F1": [
+      0.5098,
+      0.7609
+     ],
+     "F1_relaxed": [
+      0.7664,
+      0.9474
+     ]
+    }
+   },
+   "GENERAL_TOOL": {
+    "P": 0.4444,
+    "R": 0.5333,
+    "F1": 0.4848,
+    "P_relaxed": 0.6667,
+    "R_relaxed": 0.8,
+    "F1_relaxed": 0.7273,
+    "n_pred": 18,
+    "n_gold": 15,
+    "ci95": {
+     "P": [
+      0.1667,
+      0.6667
+     ],
+     "R": [
+      0.2,
+      0.8571
+     ],
+     "F1": [
+      0.1851,
+      0.7274
+     ],
+     "F1_relaxed": [
+      0.5161,
+      0.8967
+     ]
+    }
+   },
+   "IMPACT": {
+    "P": 0.0667,
+    "R": 0.3333,
+    "F1": 0.1111,
+    "P_relaxed": 0.0667,
+    "R_relaxed": 0.3333,
+    "F1_relaxed": 0.1111,
+    "n_pred": 15,
+    "n_gold": 3,
+    "ci95": {
+     "P": [
+      0.0,
+      0.2727
+     ],
+     "R": [
+      0.0,
+      1.0
+     ],
+     "F1": [
+      0.0,
+      0.3636
+     ],
+     "F1_relaxed": [
+      0.0,
+      0.3636
+     ]
+    }
+   },
+   "INDICATOR": {
+    "P": 0.4,
+    "R": 0.3333,
+    "F1": 0.3636,
+    "P_relaxed": 0.8,
+    "R_relaxed": 0.6667,
+    "F1_relaxed": 0.7273,
+    "n_pred": 5,
+    "n_gold": 6,
+    "ci95": {
+     "P": [
+      0.0,
+      1.0
+     ],
+     "R": [
+      0.0,
+      0.8
+     ],
+     "F1": [
+      0.0,
+      0.75
+     ],
+     "F1_relaxed": [
+      0.0,
+      1.1429
+     ]
+    }
+   },
+   "INFRASTRUCTURE": {
+    "P": 0.2143,
+    "R": 0.3,
+    "F1": 0.25,
+    "P_relaxed": 0.4286,
+    "R_relaxed": 0.6,
+    "F1_relaxed": 0.5,
+    "n_pred": 28,
+    "n_gold": 20,
+    "ci95": {
+     "P": [
+      0.0,
+      0.5
+     ],
+     "R": [
+      0.0,
+      0.5947
+     ],
+     "F1": [
+      0.0,
+      0.5152
+     ],
+     "F1_relaxed": [
+      0.2286,
+      0.72
+     ]
+    }
+   },
+   "INTRUSION_SET": {
+    "P": 0.1818,
+    "R": 0.1667,
+    "F1": 0.1739,
+    "P_relaxed": 0.6364,
+    "R_relaxed": 0.5833,
+    "F1_relaxed": 0.6087,
+    "n_pred": 11,
+    "n_gold": 12,
+    "ci95": {
+     "P": [
+      0.0,
+      0.4547
+     ],
+     "R": [
+      0.0,
+      0.3636
+     ],
+     "F1": [
+      0.0,
+      0.3846
+     ],
+     "F1_relaxed": [
+      0.2667,
+      0.8571
+     ]
+    }
+   },
+   "LOCATION": {
+    "P": 0.7778,
+    "R": 0.7778,
+    "F1": 0.7778,
+    "P_relaxed": 1.0,
+    "R_relaxed": 1.0,
+    "F1_relaxed": 1.0,
+    "n_pred": 9,
+    "n_gold": 9,
+    "ci95": {
+     "P": [
+      0.5,
+      1.0
+     ],
+     "R": [
+      0.5,
+      1.0
+     ],
+     "F1": [
+      0.5,
+      1.0
+     ],
+     "F1_relaxed": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "MALWARE": {
+    "P": 0.5417,
+    "R": 0.7879,
+    "F1": 0.642,
+    "P_relaxed": 0.5417,
+    "R_relaxed": 0.7879,
+    "F1_relaxed": 0.642,
+    "n_pred": 48,
+    "n_gold": 33,
+    "ci95": {
+     "P": [
+      0.3214,
+      0.7391
+     ],
+     "R": [
+      0.5556,
+      0.9259
+     ],
+     "F1": [
+      0.4193,
+      0.8
+     ],
+     "F1_relaxed": [
+      0.4193,
+      0.8
+     ]
+    }
+   },
+   "MALWARE_ANALYSIS": {
+    "P": 0.0333,
+    "R": 0.125,
+    "F1": 0.0526,
+    "P_relaxed": 0.4,
+    "R_relaxed": 1.5,
+    "F1_relaxed": 0.6316,
+    "n_pred": 30,
+    "n_gold": 8,
+    "ci95": {
+     "P": [
+      0.0,
+      0.1667
+     ],
+     "R": [
+      0.0,
+      0.429
+     ],
+     "F1": [
+      0.0,
+      0.2308
+     ],
+     "F1_relaxed": [
+      0.129,
+      1.1305
+     ]
+    }
+   },
+   "OBSERVED_DATA": {
+    "P": 0.1818,
+    "R": 0.3333,
+    "F1": 0.2353,
+    "P_relaxed": 0.4545,
+    "R_relaxed": 0.8333,
+    "F1_relaxed": 0.5882,
+    "n_pred": 11,
+    "n_gold": 6,
+    "ci95": {
+     "P": [
+      0.0,
+      0.6
+     ],
+     "R": [
+      0.0,
+      1.0
+     ],
+     "F1": [
+      0.0,
+      0.6
+     ],
+     "F1_relaxed": [
+      0.1429,
+      0.9091
+     ]
+    }
+   },
+   "THREAT_ACTOR": {
+    "P": 0.4727,
+    "R": 0.5778,
+    "F1": 0.52,
+    "P_relaxed": 0.6545,
+    "R_relaxed": 0.8,
+    "F1_relaxed": 0.72,
+    "n_pred": 55,
+    "n_gold": 45,
+    "ci95": {
+     "P": [
+      0.3226,
+      0.6333
+     ],
+     "R": [
+      0.4286,
+      0.7111
+     ],
+     "F1": [
+      0.381,
+      0.6479
+     ],
+     "F1_relaxed": [
+      0.5714,
+      0.8594
+     ]
+    }
+   },
+   "VICTIM_IDENTITY": {
+    "P": 0.381,
+    "R": 0.5333,
+    "F1": 0.4444,
+    "P_relaxed": 0.5238,
+    "R_relaxed": 0.7333,
+    "F1_relaxed": 0.6111,
+    "n_pred": 21,
+    "n_gold": 15,
+    "ci95": {
+     "P": [
+      0.1561,
+      0.6667
+     ],
+     "R": [
+      0.25,
+      0.7692
+     ],
+     "F1": [
+      0.2069,
+      0.6667
+     ],
+     "F1_relaxed": [
+      0.3683,
+      0.8095
+     ]
+    }
+   },
+   "VULNERABILITY": {
+    "P": 0.3182,
+    "R": 0.6364,
+    "F1": 0.4242,
+    "P_relaxed": 0.4545,
+    "R_relaxed": 0.9091,
+    "F1_relaxed": 0.6061,
+    "n_pred": 22,
+    "n_gold": 11,
+    "ci95": {
+     "P": [
+      0.1154,
+      0.6
+     ],
+     "R": [
+      0.3333,
+      0.9091
+     ],
+     "F1": [
+      0.1738,
+      0.7027
+     ],
+     "F1_relaxed": [
+      0.3429,
+      0.8571
+     ]
+    }
+   },
+   "MICRO": {
+    "P": 0.3492,
+    "R": 0.4749,
+    "F1": 0.4025,
+    "P_relaxed": 0.5683,
+    "R_relaxed": 0.7729,
+    "F1_relaxed": 0.655,
+    "n_pred": 461,
+    "n_gold": 339,
+    "ci95": {
+     "P": [
+      0.2834,
+      0.4217
+     ],
+     "R": [
+      0.4079,
+      0.5413
+     ],
+     "F1": [
+      0.3359,
+      0.4704
+     ],
+     "F1_relaxed": [
+      0.5914,
+      0.7214
+     ]
+    }
+   }
+  }
+ },
+ "wall_seconds": 37.2,
+ "peak_vram_mib": 4164,
+ "n_train": 2481,
+ "n_dev": 304,
+ "n_test": 131
+}

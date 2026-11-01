@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+logs/
+data/external/
+data/gold_ner/*.jsonl
+data/relevance/*.jsonl
+!data/relevance/*_ids.jsonl
+runs/**/model/
+runs/**/preds_*
+runs/**/stdout.log
+*.safetensors

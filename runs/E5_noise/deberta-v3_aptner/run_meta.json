@@ -1,0 +1,6 @@
+{"start_utc":"2026-09-07T22:21:36Z","end_utc":"2026-09-07T22:22:05Z","wall_seconds":29,"exit_code":0,
+ "peak_gpu_mem_mib":2668,"mean_gpu_util_pct":35.3,
+ "gpu":"NVIDIA GeForce RTX 5090",
+ "driver":"595.71.05",
+ "hostname":"rtx5090-workstation","cpu_count":96,"ram_gb":503,
+ "command":".venv/bin/python scripts/gold_ner/eval_saved_ner.py --model-dir runs/E2_ft/deberta-v3_aptner_coarse_s13/model --datasets aptner,aptner__bt-ru,aptner__bt-de,aptner__bt-zh,aptner__bt-es,aptner__defang,aptner__boiler,aptner__lower,aptner__typo --out runs/E5_noise/deberta-v3_aptner"}

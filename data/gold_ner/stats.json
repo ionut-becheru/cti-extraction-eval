@@ -1,0 +1,438 @@
+{
+ "aptner_train": {
+  "sentences": 6745,
+  "tokens": 182458,
+  "fine_entities": {
+   "APT": 3693,
+   "MAL": 3142,
+   "IDTY": 2923,
+   "LOC": 2604,
+   "TOOL": 1860,
+   "ACT": 1663,
+   "TIME": 1554,
+   "FILE": 1360,
+   "SECTEAM": 1061,
+   "VULNAME": 484,
+   "VULID": 413,
+   "DOM": 241,
+   "OS": 205,
+   "SHA2": 163,
+   "PROT": 144,
+   "IP": 120,
+   "ENCR": 102,
+   "MD5": 70,
+   "URL": 61,
+   "SHA1": 15,
+   "EMAIL": 12
+  },
+  "coarse_entities": {
+   "UNCOVERED": 7652,
+   "THREAT_ACTOR": 3693,
+   "MALWARE": 3142,
+   "LOCATION": 2604,
+   "TOOL": 1860,
+   "FILE": 1360,
+   "VULNERABILITY": 897,
+   "HASH": 248,
+   "DOMAIN": 241,
+   "IP": 120,
+   "URL": 61,
+   "EMAIL": 12
+  }
+ },
+ "aptner_dev": {
+  "sentences": 1752,
+  "tokens": 38815,
+  "fine_entities": {
+   "TOOL": 835,
+   "MAL": 379,
+   "APT": 349,
+   "IDTY": 340,
+   "FILE": 266,
+   "TIME": 250,
+   "LOC": 238,
+   "ACT": 96,
+   "DOM": 88,
+   "PROT": 87,
+   "SECTEAM": 85,
+   "OS": 80,
+   "SHA2": 66,
+   "MD5": 66,
+   "ENCR": 60,
+   "IP": 60,
+   "VULID": 24,
+   "URL": 23,
+   "VULNAME": 16,
+   "SHA1": 9
+  },
+  "coarse_entities": {
+   "UNCOVERED": 998,
+   "TOOL": 835,
+   "MALWARE": 379,
+   "THREAT_ACTOR": 349,
+   "FILE": 266,
+   "LOCATION": 238,
+   "HASH": 141,
+   "DOMAIN": 88,
+   "IP": 60,
+   "VULNERABILITY": 40,
+   "URL": 23
+  }
+ },
+ "aptner_test": {
+  "sentences": 1545,
+  "tokens": 39012,
+  "fine_entities": {
+   "TOOL": 874,
+   "MAL": 739,
+   "APT": 478,
+   "TIME": 277,
+   "SECTEAM": 191,
+   "LOC": 166,
+   "IDTY": 127,
+   "FILE": 96,
+   "PROT": 87,
+   "ACT": 53,
+   "DOM": 44,
+   "ENCR": 41,
+   "OS": 35,
+   "IP": 35,
+   "VULID": 33,
+   "MD5": 32,
+   "SHA2": 27,
+   "EMAIL": 23,
+   "VULNAME": 17,
+   "URL": 8
+  },
+  "coarse_entities": {
+   "TOOL": 874,
+   "UNCOVERED": 811,
+   "MALWARE": 739,
+   "THREAT_ACTOR": 478,
+   "LOCATION": 166,
+   "FILE": 96,
+   "HASH": 59,
+   "VULNERABILITY": 50,
+   "DOMAIN": 44,
+   "IP": 35,
+   "EMAIL": 23,
+   "URL": 8
+  }
+ },
+ "dnrti_train": {
+  "sentences": 5251,
+  "tokens": 140348,
+  "fine_entities": {
+   "HackOrg": 3424,
+   "Tool": 2450,
+   "Area": 2174,
+   "OffAct": 1416,
+   "Idus": 1361,
+   "Time": 1330,
+   "SamFile": 1221,
+   "Org": 1118,
+   "Exp": 1068,
+   "SecTeam": 998,
+   "Way": 828,
+   "Features": 812,
+   "Purp": 721
+  },
+  "coarse_entities": {
+   "UNCOVERED": 8584,
+   "THREAT_ACTOR": 3424,
+   "MALWARE_TOOL": 2450,
+   "LOCATION": 2174,
+   "FILE": 1221,
+   "VULNERABILITY": 1068
+  }
+ },
+ "dnrti_dev": {
+  "sentences": 662,
+  "tokens": 17602,
+  "fine_entities": {
+   "HackOrg": 426,
+   "Tool": 317,
+   "SamFile": 191,
+   "Time": 183,
+   "SecTeam": 178,
+   "Area": 144,
+   "Exp": 131,
+   "Org": 112,
+   "Way": 109,
+   "Idus": 103,
+   "OffAct": 100,
+   "Features": 97,
+   "Purp": 82
+  },
+  "coarse_entities": {
+   "UNCOVERED": 964,
+   "THREAT_ACTOR": 426,
+   "MALWARE_TOOL": 317,
+   "FILE": 191,
+   "LOCATION": 144,
+   "VULNERABILITY": 131
+  }
+ },
+ "dnrti_test": {
+  "sentences": 664,
+  "tokens": 17716,
+  "fine_entities": {
+   "HackOrg": 369,
+   "Tool": 315,
+   "SamFile": 248,
+   "Area": 216,
+   "Time": 169,
+   "SecTeam": 152,
+   "OffAct": 150,
+   "Org": 137,
+   "Exp": 132,
+   "Idus": 129,
+   "Features": 116,
+   "Purp": 115,
+   "Way": 100
+  },
+  "coarse_entities": {
+   "UNCOVERED": 1068,
+   "THREAT_ACTOR": 369,
+   "MALWARE_TOOL": 315,
+   "FILE": 248,
+   "LOCATION": 216,
+   "VULNERABILITY": 132
+  }
+ },
+ "cyner_train": {
+  "sentences": 2811,
+  "tokens": 68191,
+  "fine_entities": {
+   "Indicator": 1252,
+   "System": 838,
+   "Malware": 705,
+   "Organization": 288,
+   "Vulnerability": 48
+  },
+  "coarse_entities": {
+   "INDICATOR": 1252,
+   "UNCOVERED": 1126,
+   "MALWARE": 705,
+   "VULNERABILITY": 48
+  }
+ },
+ "cyner_dev": {
+  "sentences": 813,
+  "tokens": 19530,
+  "fine_entities": {
+   "Malware": 254,
+   "Indicator": 247,
+   "System": 182,
+   "Organization": 92,
+   "Vulnerability": 9
+  },
+  "coarse_entities": {
+   "UNCOVERED": 274,
+   "MALWARE": 254,
+   "INDICATOR": 247,
+   "VULNERABILITY": 9
+  }
+ },
+ "cyner_test": {
+  "sentences": 748,
+  "tokens": 19270,
+  "fine_entities": {
+   "Indicator": 301,
+   "System": 249,
+   "Malware": 242,
+   "Organization": 134,
+   "Vulnerability": 10
+  },
+  "coarse_entities": {
+   "UNCOVERED": 383,
+   "INDICATOR": 301,
+   "MALWARE": 242,
+   "VULNERABILITY": 10
+  }
+ },
+ "annoctr_train": {
+  "sentences": 7570,
+  "tokens": 148940,
+  "fine_entities": {
+   "MALWARE": 1031,
+   "ORG": 940,
+   "CON": 908,
+   "LOC": 733,
+   "DATE": 709,
+   "TECHNIQUE": 648,
+   "TACTIC": 433,
+   "GROUP": 387,
+   "SECTOR": 287,
+   "CLICommand/CodeSnippet": 213,
+   "TOOL": 136
+  },
+  "coarse_entities": {
+   "UNCOVERED": 4138,
+   "MALWARE": 1031,
+   "LOCATION": 733,
+   "THREAT_ACTOR": 387,
+   "TOOL": 136
+  }
+ },
+ "annoctr_dev": {
+  "sentences": 1550,
+  "tokens": 54657,
+  "fine_entities": {
+   "ORG": 266,
+   "LOC": 233,
+   "MALWARE": 205,
+   "CON": 192,
+   "DATE": 146,
+   "SECTOR": 124,
+   "TECHNIQUE": 103,
+   "GROUP": 99,
+   "TACTIC": 72,
+   "CLICommand/CodeSnippet": 63,
+   "TOOL": 31
+  },
+  "coarse_entities": {
+   "UNCOVERED": 966,
+   "LOCATION": 233,
+   "MALWARE": 205,
+   "THREAT_ACTOR": 99,
+   "TOOL": 31
+  }
+ },
+ "annoctr_test": {
+  "sentences": 3059,
+  "tokens": 64822,
+  "fine_entities": {
+   "CON": 446,
+   "MALWARE": 421,
+   "ORG": 372,
+   "TECHNIQUE": 359,
+   "DATE": 272,
+   "GROUP": 213,
+   "LOC": 189,
+   "TACTIC": 189,
+   "SECTOR": 141,
+   "TOOL": 52,
+   "CLICommand/CodeSnippet": 39
+  },
+  "coarse_entities": {
+   "UNCOVERED": 1818,
+   "MALWARE": 421,
+   "THREAT_ACTOR": 213,
+   "LOCATION": 189,
+   "TOOL": 52
+  }
+ },
+ "attacker_train": {
+  "sentences": 2481,
+  "tokens": 67001,
+  "fine_entities": {
+   "ATTACK_PATTERN": 811,
+   "GENERAL_IDENTITY": 716,
+   "THREAT_ACTOR": 674,
+   "MALWARE": 548,
+   "INFRASTRUCTURE": 408,
+   "VICTIM_IDENTITY": 401,
+   "OBSERVED_DATA": 333,
+   "COURSE_OF_ACTION": 266,
+   "CAMPAIGN": 226,
+   "ATTACK_TOOL": 208,
+   "GENERAL_TOOL": 206,
+   "LOCATION": 206,
+   "VULNERABILITY": 197,
+   "ATTACK_MOTIVATION": 176,
+   "IMPACT": 153,
+   "INTRUSION_SET": 138,
+   "MALWARE_ANALYSIS": 136,
+   "INDICATOR": 132
+  },
+  "coarse_entities": {
+   "UNCOVERED": 3626,
+   "THREAT_ACTOR": 812,
+   "MALWARE": 548,
+   "TOOL": 414,
+   "LOCATION": 206,
+   "VULNERABILITY": 197,
+   "INDICATOR": 132
+  }
+ },
+ "attacker_dev": {
+  "sentences": 304,
+  "tokens": 8394,
+  "fine_entities": {
+   "ATTACK_PATTERN": 106,
+   "GENERAL_IDENTITY": 99,
+   "THREAT_ACTOR": 95,
+   "MALWARE": 67,
+   "INFRASTRUCTURE": 45,
+   "ATTACK_TOOL": 45,
+   "VICTIM_IDENTITY": 42,
+   "COURSE_OF_ACTION": 37,
+   "ATTACK_MOTIVATION": 29,
+   "OBSERVED_DATA": 29,
+   "GENERAL_TOOL": 29,
+   "VULNERABILITY": 28,
+   "IMPACT": 25,
+   "LOCATION": 20,
+   "INTRUSION_SET": 15,
+   "CAMPAIGN": 14,
+   "INDICATOR": 14,
+   "MALWARE_ANALYSIS": 13
+  },
+  "coarse_entities": {
+   "UNCOVERED": 439,
+   "THREAT_ACTOR": 110,
+   "TOOL": 74,
+   "MALWARE": 67,
+   "VULNERABILITY": 28,
+   "LOCATION": 20,
+   "INDICATOR": 14
+  }
+ },
+ "attacker_test": {
+  "sentences": 131,
+  "tokens": 3633,
+  "fine_entities": {
+   "GENERAL_IDENTITY": 64,
+   "THREAT_ACTOR": 45,
+   "MALWARE": 33,
+   "ATTACK_PATTERN": 31,
+   "COURSE_OF_ACTION": 22,
+   "INFRASTRUCTURE": 20,
+   "ATTACK_TOOL": 18,
+   "ATTACK_MOTIVATION": 17,
+   "VICTIM_IDENTITY": 15,
+   "GENERAL_TOOL": 15,
+   "INTRUSION_SET": 12,
+   "VULNERABILITY": 11,
+   "LOCATION": 9,
+   "MALWARE_ANALYSIS": 8,
+   "OBSERVED_DATA": 6,
+   "INDICATOR": 6,
+   "CAMPAIGN": 4,
+   "IMPACT": 3
+  },
+  "coarse_entities": {
+   "UNCOVERED": 190,
+   "THREAT_ACTOR": 57,
+   "TOOL": 33,
+   "MALWARE": 33,
+   "VULNERABILITY": 11,
+   "LOCATION": 9,
+   "INDICATOR": 6
+  }
+ },
+ "dropped_malformed_tags": {
+  "aptner:PROT": 12,
+  "aptner:S-S-SECTEAM": 1,
+  "aptner:B-IDTYL": 1,
+  "aptner:E-S-SECTEAM": 1,
+  "aptner:is": 3,
+  "aptner:as": 1,
+  "aptner:also": 1,
+  "attacker:B-ATTACK_RESOURCE_LEVEL": 8,
+  "attacker:I-ATTACK_RESOURCE_LEVEL": 48,
+  "attacker:B-ATTACK_SOPHISTICATION_LEVEL": 19,
+  "attacker:I-ATTACK_SOPHISTICATION_LEVEL": 186
+ }
+}
